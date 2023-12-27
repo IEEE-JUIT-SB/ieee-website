@@ -47,10 +47,10 @@ const Footer = () => {
           </div>
           <div className="sb_footer-links_div">
             <h4>SOCIAL LINKS</h4>
-            <a href="">Facebook</a>
-            <a href="">Linkedin</a>
-            <a href="">Instagram</a>
-            <a href="">Youtube</a>
+            <a href="">FACEBOOK</a>
+            <a href="">LINKEDIN</a>
+            <a href="">INSTAGRAM</a>
+            <a href="">YOUTUBE</a>
           </div>
         </div>
       </div>

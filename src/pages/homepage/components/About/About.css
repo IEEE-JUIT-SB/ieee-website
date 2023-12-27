@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,31 +19,31 @@
 }
 
 .about-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0.2) 10%, /* Adjusted stop for a darker upper part */
-        rgba(0, 0, 0, 0.1) 50%,
-        rgba(0, 0, 0, 0.2) 90%, /* Adjusted stop for a darker lower part */
-        rgba(0, 0, 0, 0.9) 100%
-      );
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.2) 10%,
+    /* Adjusted stop for a darker upper part */ rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.2) 90%,
+    /* Adjusted stop for a darker lower part */ rgba(0, 0, 0, 0.9) 100%
+  );
+  pointer-events: none;
 }
 
 .about-us__container {
-    margin-inline: 8%;
+  margin-inline: 8%;
 }
 
 .about-us__heading {
-  font-size: 120px; 
+  font-size: 120px;
   margin-inline: 20px;
-  
+
   font-family: Saira Stencil One;
 }
 
@@ -49,7 +51,7 @@
   width: 95%;
   margin: 0 auto;
   display: flex;
-  
+
   flex-wrap: wrap;
 }
 
@@ -62,9 +64,9 @@
 .about-us__stats > * {
   padding-block: 30px;
   padding-inline: 40px;
-  margin-block: 20px; 
+  margin-block: 20px;
   margin-right: 40px;
-  
+
   background-color: rgba(59, 40, 174, 0.2);
   border-radius: 5px;
 }
@@ -81,15 +83,15 @@
 .about-us__paragraphs {
   flex: 1 1 70%;
   font-size: 16px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   text-align: justify;
   font-family: Montserrat;
   line-height: 1.6;
-  
+
   border-radius: 1.5rem;
   border: 1px solid #f2e4e4;
   background: linear-gradient(
