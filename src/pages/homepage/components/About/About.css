@@ -11,7 +11,7 @@
 .about-body {
   position: relative;
   color: white;
-  background: url("./assets/about-us-bg.png"), black;
+  background: url("./Assets/about-us-bg.png"), black;
   background-size: cover;
   padding-bottom: 4rem;
 }
