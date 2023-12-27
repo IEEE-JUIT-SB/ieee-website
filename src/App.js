@@ -10,15 +10,9 @@ function App() {
     <div className="App">
       {/* <Navbar /> */}
       {/* <Landing /> */}
-      {/* // <<<<<<< main */}
       <About />
       <ContactUs />
-      {/* <Footer /> */}
-      =======
-      {/* <About /> */}
-      <ContactUs />
       <Footer />
-      {/* // >>>>>>> main */}
     </div>
   );
 }

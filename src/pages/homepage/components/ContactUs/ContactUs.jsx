@@ -9,18 +9,14 @@ import {
 
 function ContactUs() {
   return (
-    <body>
+    <div id="contact-us">
       <div className="contact-head">Contact Us</div>
       <div className="contact-subhead">We would love to hear from you!</div>
       <div className="contact-body">
         <div className="contact-info">
           <div className="address">
             <FaLocationDot className="address-icon" />
-            <p>
-              JUIT, Waknaghat
-              <br />
-              SOLAN HP-173234
-            </p>
+            <p>JUIT, Waknaghat SOLAN HP-173234</p>
           </div>
           <div className="email">
             <a href="">
@@ -42,22 +38,25 @@ function ContactUs() {
           </div>
         </div>
         <div className="vertical-line"></div>
-        <div className="contact-form">
+        <form className="contact-form">
           <div className="name">
             <div className="first-name">
               <label htmlFor=""> First Name</label>
-              <br />
               <input type="text" />
             </div>
             <div className="last-name">
               <label htmlFor=""> Last Name</label>
-              <br />
               <input type="text" />
             </div>
+            <div className="message">
+              <label htmlFor="">Message</label>
+              <textarea />
+            </div>
+            <button type="submit">Submit</button>
           </div>
-        </div>
+        </form>
       </div>
-    </body>
+    </div>
   );
 }
 

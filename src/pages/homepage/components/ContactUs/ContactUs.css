@@ -1,127 +1,148 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-body{
-    background-color: #040115;
-    background-image: url('./contact_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+#contact-us {
+  background-color: #040115;
+  background-image: url("./contact_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 /* Contact Headings */
-.contact-head{
-    color: #fff;
-    font-size: 50px;
-    text-align: center;
-    margin-top: 2rem;
-    font-family: 'Saira Stencil One', sans-serif;
+.contact-head {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Saira Stencil One", sans-serif;
 }
-.contact-subhead{
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 0.5rem;
-    font-family: 'Montserrat', sans-serif;
+.contact-subhead {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
-.contact-body{
-    height: 500px;
-    width: 100%;
-    display: flex;
-    align-items: space-between;
+.contact-body {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: space-between;
 }
 
 /* Contact-Info */
-.contact-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    width: 50%;
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  width: 50%;
 }
-.address{
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
+.address {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
 }
-.address-icon{
-    height: 40px;
-    width: 40px;
-    margin-right: 2rem;
+.address-icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 2rem;
 }
-.email{
-    margin-top: 2rem;
+.email {
+  margin-top: 2rem;
 }
-.email a{
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
+.email a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
 }
-.email-icon{
-    height: 40px;
-    width: 40px;
-    margin-right: 2rem;
+.email-icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 2rem;
 }
-.instagram{
-    margin-top: 2rem;
+.instagram {
+  margin-top: 2rem;
 }
-.instagram a{
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;    
+.instagram a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-.insta-icon{
-    height: 40px;
-    width: 40px;
-    margin-right: 2rem;
+.insta-icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 2rem;
 }
-.linkedin{
-    margin-top: 2rem;
+.linkedin {
+  margin-top: 2rem;
 }
-.linkedin a{
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+.linkedin a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-.linkedin-icon{
-    height: 40px;
-    width: 40px;
-    margin-right: 2rem;
+.linkedin-icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 2rem;
 }
 
-.vertical-line{
-    height: 100%;
-    width: 2px;
-    background-color: #fff;
-    margin-top: 1rem;
+.vertical-line {
+  height: 100%;
+  width: 2px;
+  background-color: #fff;
+  margin-top: 1rem;
 }
 
 /* Contact-form */
-.contact-form{
-    /* margin-top: 5rem; */
-    margin-left: 7.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    display: flex;
-    align-items: center;
+.contact-form {
+  /* margin-left: 7.5rem; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
 }
-.name{
-    color: #fff;
-    display: flex;
-    align-items: self-start;
-    margin-bottom: 1rem;
+.name {
+  color: #fff;
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+  align-items: center;
 }
-.name input{
-    margin: 10px;
+.name div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 40%;
+}
+.name input {
+  width: 100%;
+}
+.message textarea {
+  width: 100%;
+  height: 7rem;
+}
+.name button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 100;
 }
