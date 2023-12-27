@@ -1,5 +1,5 @@
 .section_padding {
-  padding: 4rem 4rem;
+  padding: 2rem 4rem;
 }
 .footer {
   background-color: #060313;
@@ -31,6 +31,9 @@
 .sb_footer-links_div a {
   color: rgb(175, 175, 179);
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
 }
 .socialmedia {
   display: flex;
@@ -42,7 +45,7 @@
 }
 .sb_footer-links_div h4 {
   font-size: 18px;
-  line-height: 17px;
+  line-height: 0px;
   margin-bottom: 0.9rem;
 }
 .sb_footer-links_div p {
@@ -79,6 +82,7 @@ hr {
   font-weight: 600;
   display: flex;
   justify-content: center;
+  margin-top: 3.5px;
 }
 @media screen and (max-width: 850px) {
   .sb_footer-heading h1 {

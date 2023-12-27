@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,65 +8,49 @@ const Footer = () => {
       <div className="sb_footer section_padding">
         <div className="sb_footer-links">
           <div className="sb_footer-links_div">
-            <h4>FOR BUISNESS</h4>
-            <a href="/employer">
-              <p>EMPLOYER</p>
-            </a>
-            <a href="/healthplan">
-              <p>HEALTH PLAN</p>
-            </a>
-            <a href="/individual">
-              <p>INDIVIDUAL</p>
-            </a>
+            <h4>PAGE SECTIONS</h4>
+            <a href="/employer">HOME</a>
+            <a href="/healthplan">ABOUT</a>
+            <a href="/individual">STATS</a>
+            <a href="/individual">COUNCIL</a>
+            <a href="/individual">MEMBERSHIP</a>
+            <a href="/individual">TESTIMONIALS</a>
+            <a href="/individual">EVENTS</a>
+            <a href="/individual">CONTACT US</a>
           </div>
 
           <div className="sb_footer-links_div">
-            <h4>RESOURCES</h4>
-            <a href="/resource">
-              <p>RESOURCE CENTER</p>
-            </a>
-            <a href="/resource">
-              <p>TESTIMONIAL</p>
-            </a>
-            <a href="/resource">
-              <p>STV</p>
-            </a>
+            <h4>IEEE JUIT SB</h4>
+            <a href="/resource">IEEE JUIT</a>
+            <a href="/resource">IEEE WIE JUIT</a>
+            <a href="/resource">IEEE SIGHT JUIT</a>
           </div>
 
           <div className="sb_footer-links_div">
-            <h4>PARTNERs</h4>
-            <a href="/resource">
-              <p>IEEE JUIT-SB</p>
+            <h4>IEEE</h4>
+            <a href="https://www.ieee.org//" target="_blank">
+              IEEE
+            </a>
+            <a href="https://ewh.ieee.org/r10/delhi/" target="_blank">
+              IEEE DELHI SECTION
+            </a>
+            <a href="https://www.ieeer10.org/" target="_blank">
+              IEEE R 10
             </a>
           </div>
           <div className="sb_footer-links_div">
-            <h4>RESOURCES</h4>
-            <a href="/about">
-              <p>about</p>
-            </a>
-            <a href="/press">
-              <p>press</p>
-            </a>
-            <a href="/career">
-              <p>career</p>
-            </a>
-            <a href="/contact">
-              <p>contact</p>
-            </a>
+            <h4>EVENTS</h4>
+            <a href="/about">ENIGMA</a>
+            <a href="/press">MINDSCAPE</a>
+            <a href="/career">CYBERVERSE</a>
+            <a href="/contact">R&D EXPO</a>
           </div>
           <div className="sb_footer-links_div">
             <h4>SOCIAL LINKS</h4>
-            <p>icons comming soon</p>
-            <p>
-              <img src="{fb}" alt="" />
-            </p>
-            <p>
-              <img src="{fb}" alt="" />
-            </p>
-            <p>
-              <img src="{fb}" alt="" />
-            </p>
-            {/* not imported till now  */}
+            <a href="">Facebook</a>
+            <a href="">Linkedin</a>
+            <a href="">Instagram</a>
+            <a href="">Youtube</a>
           </div>
         </div>
       </div>
