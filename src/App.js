@@ -3,7 +3,7 @@ import Navbar from './pages/homepage/components/navbar/Navbar';
 import Landing from './pages/homepage/components/landing/Landing';
 import About from './pages/homepage/components/About/About';
 import ContactUs from './pages/homepage/components/ContactUs/ContactUs';
-import Footer from './pages/homepage/components/Footer/Footer';
+import Footer from "./footer/footer";
 
 
 function App() {
@@ -11,9 +11,15 @@ function App() {
     <div className="App">
       {/* <Navbar /> */}
       {/* <Landing /> */}
+// <<<<<<< main
       <About />
       <ContactUs />
       {/* <Footer /> */}
+=======
+      {/* <About /> */}
+      <ContactUs/>
+      <Footer />
+// >>>>>>> main
     </div>
 
   );
