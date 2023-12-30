@@ -41,11 +41,11 @@ function ContactUs() {
         <form className="contact-form">
           <div className="name">
             <div className="first-name">
-              <label htmlFor=""> First Name</label>
+              <label htmlFor="">First Name</label>
               <input type="text" />
             </div>
             <div className="last-name">
-              <label htmlFor=""> Last Name</label>
+              <label htmlFor="">Last Name</label>
               <input type="text" />
             </div>
             <div className="message">
