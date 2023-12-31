@@ -84,22 +84,59 @@
 .about-us__paragraphs {
   flex: 1 1 70%;
   font-size: 16px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-align: justify;
   font-family: Montserrat;
   line-height: 1.6;
-
   border-radius: 1.5rem;
   border: 1px solid #f2e4e4;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.2) 1.56%,
     rgba(255, 255, 255, 0) 100%
-  );
+  ); */
+  animation: bg-animation 10s linear infinite;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes bg-animation {
+  0% {
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2) 1.56%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  25% {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.2) 1.56%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 1.56%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  75% {
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.2) 1.56%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      360deg,
+      rgba(255, 255, 255, 0.2) 1.56%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
 }
 
 .about-us__para_wrapper > * {
