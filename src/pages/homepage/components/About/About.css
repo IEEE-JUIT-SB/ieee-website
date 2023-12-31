@@ -13,7 +13,7 @@
 .about-body {
   position: relative;
   color: white;
-  background: url("./Assets/about-us-bg.png"), black;
+  background: url("./Assets/about_us_bg.png"), black;
   background-size: cover;
   height: 100vh;
   /* padding-bottom: 4rem; */
