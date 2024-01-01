@@ -1,3 +1,11 @@
+body
+{
+    background-image: url('Background1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 685px; 
+}
+
 .heading 
 {
     text-align: center;
@@ -5,6 +13,7 @@
     font-weight: 400;
     margin: 30px auto;
     font-family: 'Saira Stencil One';
+    color: white;
 }
 
 .test-content
@@ -17,6 +26,7 @@
     border-radius: 40px;
     border: 1px solid #000;
     background: rgba(43, 39, 39, 0.70);
+    color: white;
 
 }
 
@@ -128,7 +138,6 @@
     .test-pic
     {
         margin: 15px 5px;
-        /*width: 70px;
-        height: 70px; */
+        
     }
 }
