@@ -1,134 +1,101 @@
-.heading 
-{
-    text-align: center;
-    font-size: 50px;
-    font-weight: 400;
-    margin: 30px auto;
-    font-family: 'Saira Stencil One';
+.heading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  margin: 30px auto;
+  font-family: "Saira Stencil One";
 }
 
-.test-content
-{
-    display: flex;
-    margin: auto;
-    width: 80%;
-    align-items: center;
-    height: 440px; 
-    border-radius: 40px;
-    border: 1px solid #000;
-    background: rgba(43, 39, 39, 0.70);
-
+.test-content {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  height: 440px;
+  border-radius: 40px;
+  border: 1px solid #000;
+  background: rgba(43, 39, 39, 0.7);
 }
 
-.test-para
-{
-    float: right; 
-    width: 50%;
-    margin-left: 130px;
-    font-family: 'Montserrat';
-    font-size: 30px;
-    font-weight:700;
-
-    
-
-} 
-
-.test-pic
-{
-    position: relative;
-    left: 80px;
-    top: 20px;
-    float: left;
-    margin: 30px;
-    text-align: center;
-
-    
-    
+.test-para {
+  float: right;
+  width: 50%;
+  margin-left: 130px;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
 }
 
-
-.test-pic p
-{
-    margin: auto;
-    font-size: 20px;
-    
-    
+.test-pic {
+  position: relative;
+  left: 80px;
+  top: 20px;
+  float: left;
+  margin: 30px;
+  text-align: center;
 }
 
-.test-pic img
-{
-    border-radius: 25px;
-    
-    
+.test-pic p {
+  margin: auto;
+  font-size: 20px;
 }
 
-@media (max-width: 1200px)
-{
-    .test-content
-    {
-        height: 500px;
-    }
+.test-pic img {
+  border-radius: 25px;
+}
+
+@media (max-width: 1200px) {
+  .test-content {
+    height: 500px;
+  }
 }
 
 @media (max-width: 1000px) {
-    .test-content
-    {
-        height: 650px;
-    }
+  .test-content {
+    height: 650px;
+  }
 }
 
-@media (max-width: 970px)
-{
-    .test-content{
-        display: flex;
-        flex-direction: column;
-        height: 900px;
-    }
+@media (max-width: 970px) {
+  .test-content {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+  }
 
-    .test-para
-    {
-        width: 70%;
-        margin-left: 0;
-        
-    }
+  .test-para {
+    width: 70%;
+    margin-left: 0;
+  }
 
-    .test-pic
-    {
-        left: 0;
-        margin: 20px auto;
-    }
+  .test-pic {
+    left: 0;
+    margin: 20px auto;
+  }
 }
 
-@media (max-width: 740px)
-{
-    .test-content
-    {
-        height: 850px;
-    }
-    
-    .test-para
-    {
-        font-size: 25px;
-        
-    }
+@media (max-width: 740px) {
+  .test-content {
+    height: 850px;
+  }
+
+  .test-para {
+    font-size: 25px;
+  }
 }
 
-@media (max-width: 560px)
-{
-    .test-content
-    {
-        height: 780px;
-    }
+@media (max-width: 560px) {
+  .test-content {
+    height: 780px;
+  }
 
-    .test-para
-    {
-        font-size: 20px;
-    }
+  .test-para {
+    font-size: 20px;
+  }
 
-    .test-pic
-    {
-        margin: 15px 5px;
-        /*width: 70px;
+  .test-pic {
+    margin: 15px 5px;
+    /*width: 70px;
         height: 70px; */
-    }
+  }
 }
