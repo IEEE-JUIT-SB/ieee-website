@@ -9,8 +9,8 @@ import Testimonials from "./pages/homepage/components/Testimonials/Testimonials"
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      {/* <Landing /> */}
+      <Navbar />
+      <Landing />
       <About />
       <Testimonials />
       <ContactUs />
