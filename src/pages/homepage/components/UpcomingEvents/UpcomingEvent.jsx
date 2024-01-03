@@ -12,6 +12,7 @@ export default function UpcomingEvents() {
             <div className="content">
                 <h2>08 Sept</h2>
                 <h3>Title of event</h3>
+                <div className="content_before">Title of event</div>
                 <br />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
             </div>
@@ -28,15 +29,15 @@ export default function UpcomingEvents() {
             <div className="box">
             <span />
             <div className="content">
-                <h2>12 Sept</h2>
+                <h2>16 Sept</h2>
                 <h3>Title of event</h3>
                 <br />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
             </div>
             </div>
-            <div className="card"></div>
+            
         </div>
-        
+        <div className="card"></div>
         
                         
         </div>

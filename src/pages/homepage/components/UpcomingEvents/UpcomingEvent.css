@@ -20,9 +20,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 0;
-    margin-left: 160px;
     margin-top: 50px;
+    margin-left: -55%;
   }
   
   .container .box {
@@ -31,7 +30,6 @@
     height: 320px;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 40px 30px;
     transition: 0.5s;
   }
@@ -192,7 +190,8 @@
   .card {
     height: 160px;
     width: 700px;
-    margin-left: 30px;
+    margin-left: 200px;
+    margin-bottom: 200px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -200,3 +199,17 @@
     color: #fff;
   }
 
+  .container .box .content h2,
+  .container .box .content p {
+    transition: 0.5s;
+  }
+  
+  .container .box:hover .content {
+    left: -25px;
+    padding: 60px 40px;
+    opacity: 1; /* Make the content visible */
+  }
+  
+  .container .box:hover .content h2 {
+    opacity: 0; /* Hide h2 when box is hovered */
+  }
