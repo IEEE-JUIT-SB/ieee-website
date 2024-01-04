@@ -15,8 +15,13 @@
   color: white;
   background: url("./Assets/about_us_bg.png"), black;
   background-size: cover;
+<<<<<<< HEAD
   height: auto;
   padding-bottom: 2rem;
+=======
+  height: 110vh;
+  /* padding-bottom: 4rem; */
+>>>>>>> 3986afc8ff9993c71931d5922f45f00d67635ddb
 }
 
 .about-body::before {
