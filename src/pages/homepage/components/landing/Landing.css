@@ -1,0 +1,61 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: -43px; /* Adjust as needed */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.IEEE {
+  position: absolute;
+  top: 34%;
+  left: 56.5%;
+  transform: translate(-50%, -50%);
+}
+
+.IEEE img {
+  max-width: 70%;
+  max-height: 70%;
+}
+.text {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.text img {
+  max-width: 70%;
+
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 87%; /* Adjust as needed */
+  left: 52.3%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+}
+
+.images img {
+  max-width: 15%; /* Adjust as needed */
+  margin-right: 5vw; /* Adjust as needed */
+}
