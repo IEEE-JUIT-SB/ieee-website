@@ -1,22 +1,21 @@
-import "./App.css";
-import Navbar from "./pages/homepage/components/navbar/Navbar";
-import Landing from "./pages/homepage/components/landing/Landing";
-import About from "./pages/homepage/components/About/About";
-import ContactUs from "./pages/homepage/components/ContactUs/ContactUs";
-import Footer from "./pages/homepage/components/Footer/Footer";
-import Testimonials from "./pages/homepage/components/Testimonials/Testimonials";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/homepage/homepage";
+// import About from "./pages/homepage/components/about/About";
+import NoPage from "./pages/noPage/NoPage";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Landing />
-      <About />
-      <Testimonials />
-      <ContactUs />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        {/* <Route path="blogs" element={<About />} /> */}
+        {/* <Route path="contact" element={<Contact />} /> */}
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);

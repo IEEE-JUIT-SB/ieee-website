@@ -15,8 +15,8 @@
   color: white;
   background: url("./Assets/about_us_bg.png"), black;
   background-size: cover;
-  height: 100vh;
-  /* padding-bottom: 4rem; */
+  height: auto;
+  padding-bottom: 2rem;
 }
 
 .about-body::before {
@@ -30,9 +30,9 @@
     to top,
     rgba(0, 0, 0, 0.9) 0%,
     rgba(0, 0, 0, 0.2) 10%,
-    /* Adjusted stop for a darker upper part */ rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.1) 50%,
     rgba(0, 0, 0, 0.2) 90%,
-    /* Adjusted stop for a darker lower part */ rgba(0, 0, 0, 0.9) 100%
+    rgba(0, 0, 0, 0.9) 100%
   );
   pointer-events: none;
 }
@@ -70,7 +70,36 @@
 
   background-color: rgba(59, 40, 174, 0.2);
   border-radius: 5px;
+  position: relative;
+  overflow: hidden;
 }
+
+.about-us__stats > *::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  top: 0;
+  left: -70px;
+  width: 60px;
+  height: 100%;
+  transform: skewX(-30deg);
+  transition: left 0.5s; /* Use transition instead of animation */
+}
+
+/* .about-us__stats > *:hover {
+  animation: jello-horizontal 0.9s both;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+} */
+
+.about-us__stats > *:hover:before {
+  left: 120%; /* Move to the hover state */
+}
+
+.about-us__stats > *:not(:hover):before {
+  left: -100px; /* Move back to the initial state when not hovering */
+}
+
 
 .about-us__title {
   font-size: 40px;
@@ -97,48 +126,41 @@
     rgba(255, 255, 255, 0.2) 1.56%,
     rgba(255, 255, 255, 0) 100%
   ); */
-  animation: bg-animation 10s linear infinite;
   transition: all 0.5s ease-in-out;
-}
-
-@keyframes bg-animation {
-  0% {
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.2) 1.56%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
-  25% {
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.2) 1.56%,
-      rgba(255, 255, 255, 0.1) 100%
-    );
-  }
-  50% {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.2) 1.56%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
-  75% {
-    background: linear-gradient(
-      270deg,
-      rgba(255, 255, 255, 0.2) 1.56%,
-      rgba(255, 255, 255, 0.1) 100%
-    );
-  }
-  100% {
-    background: linear-gradient(
-      360deg,
-      rgba(255, 255, 255, 0.2) 1.56%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
 }
 
 .about-us__para_wrapper > * {
   margin: 40px;
 }
+
+/* 
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+} */

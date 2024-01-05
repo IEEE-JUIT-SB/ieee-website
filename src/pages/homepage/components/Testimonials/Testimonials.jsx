@@ -3,8 +3,8 @@ import "./Testimonials.css";
 
 export default function Testimonials() {
   return (
-    <div>
-      <div class="heading">TESTIMONIALS</div>
+    <div id="testimonial">
+      <div class="heading" >TESTIMONIALS</div>
 
       <div class="test-content">
         <div class="test-pic">
@@ -12,6 +12,7 @@ export default function Testimonials() {
             src="https://ieeejuit.co.in/images/board/ishita.png"
             height="270px"
             width="240px"
+            alt=""
           />
 
           <p>
