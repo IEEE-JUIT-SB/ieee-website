@@ -1,0 +1,51 @@
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Add transition for a smooth color change */
+  }
+  
+  .navbar.scrolled {
+    background-color: black;
+  }
+  
+  
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+    color: white;
+  }
+  
+  .text-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: white; /* Set the color to match your text color */
+    text-decoration: none; /* Optional: Add an underline to mimic a link */
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+
+  }
+  .list {
+    display: flex;
+    padding: 10;
+
+    
+  }
+  .right-nav {
+    display: flex;
+    padding: 40;
+  }
