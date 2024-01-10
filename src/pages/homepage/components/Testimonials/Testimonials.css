@@ -27,6 +27,7 @@ body
     border: 1px solid #000;
     background: rgba(43, 39, 39, 0.70);
     color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 
 }
 
@@ -140,4 +141,10 @@ body
         margin: 15px 5px;
         
     }
+}
+
+.test-content:hover
+{
+    background-color: rgb(21, 19, 19);
+    transform: scale(1.05);
 }
