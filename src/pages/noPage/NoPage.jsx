@@ -1,6 +1,6 @@
 import React from "react";
 import "./NoPage.css";
-import Footer from "../homepage/components/footer/Footer";
+import Footer from "../homepage/components/Footer/Footer";
 import Asset from "./assets/asset.png";
 import Navbar from "../homepage/components/navbar/Navbar";
 
