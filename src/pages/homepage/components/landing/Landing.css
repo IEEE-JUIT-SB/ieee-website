@@ -3,6 +3,40 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: #030014;
+  z-index: -2;
+}
+.background-assets {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.background-assets img:nth-child(1) {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  width: 300px;
+  animation: twinkle 5s infinite;
+}
+.background-assets img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  width: 300px;
+  rotate: 180deg;
+  animation: twinkle 10s infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .box {
@@ -23,39 +57,43 @@
   max-height: 100%;
 }
 
-.IEEE {
-  position: absolute;
-  top: 34%;
-  left: 56.5%;
-  transform: translate(-50%, -50%);
-}
-
-.IEEE img {
-  max-width: 70%;
-  max-height: 70%;
-}
-.text {
-  position: absolute;
-  top: 50%; /* Adjust as needed */
-  left: 55%;
-  transform: translate(-50%, -50%);
-}
-
-.text img {
-  max-width: 70%;
-
-}
-.images {
+#home {
   display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 87%; /* Adjust as needed */
-  left: 52.3%;
-  transform: translate(-50%, -50%);
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.images img {
-  max-width: 15%; /* Adjust as needed */
-  margin-right: 5vw; /* Adjust as needed */
+#bg-asset {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  mix-blend-mode: exclusion;
+  z-index: 2;
+  /* height: 100%; */
+  /* filter: brightness(0.8); */
+}
+.starfield {
+  position: absolute;
+  z-index: 0;
+  top: 3%;
+  right: 0.5%;
+}
+.landing-section1 {
+  z-index: 5;
+  padding-bottom: 24rem;
+}
+#ieee-landing {
+  color: white;
+  font-family: font1;
+  font-size: 13rem;
+  z-index: 5;
+  line-height: 8rem;
+}
+#ieee-quote {
+  color: white;
+  font-family: font1;
+  font-size: 2rem;
+  z-index: 5;
+  padding-left: 0.5rem;
 }
