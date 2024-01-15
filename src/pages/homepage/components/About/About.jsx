@@ -1,97 +1,100 @@
-import React, {useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import "./About.css";
 
 export default function About() {
+  const [isMouseInside, setIsMouseInside] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [gradientAngle, setGradientAngle] = useState(180);
 
-    const [isMouseInside, setIsMouseInside] = useState(false);
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    const [gradientAngle, setGradientAngle] = useState(180);
+  const divRef = useRef(null);
 
-    const divRef = useRef(null);
+  useEffect(() => {
+    const divElement = divRef.current;
+    const { left, top, width, height } = divElement.getBoundingClientRect();
 
-    useEffect(() => {
-      const divElement = divRef.current;
-      const { left, top, width, height } = divElement.getBoundingClientRect();
-  
-      const centerX = left + width / 2;
-      const centerY = top + height / 2;
-  
-      console.log('Center coordinates:', centerX, centerY);
-    }, []);
+    const centerX = left + width / 2;
+    const centerY = top + height / 2;
 
-    const handleMouseEnter = () => {
-      setIsMouseInside(true);
+    console.log("Center coordinates:", centerX, centerY);
+  }, []);
 
-    };
+  const handleMouseEnter = () => {
+    setIsMouseInside(true);
+  };
 
-    const handleMouseLeave = () => {
-      setIsMouseInside(false);
-      smoothGradientAngleTransition();
-      setTimeout(() => {
-        smoothGradientAngleTransition(false);
-      }, 150);    // 200ms delay to start the transition back to the original angle
-    };
+  const handleMouseLeave = () => {
+    setIsMouseInside(false);
+    smoothGradientAngleTransition();
+    setTimeout(() => {
+      smoothGradientAngleTransition(false);
+    }, 150); // 200ms delay to start the transition back to the original angle
+  };
 
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
-  
-    const calculateGradientAngle = () => {
-      const divElement = divRef.current;
-      const { left, top, width, height } = divElement.getBoundingClientRect();
-  
-      const centerX = left + width / 2;
-      const centerY = top + height / 2;
-  
-      const x = - mousePosition.x + centerX;
-      const y = centerY - mousePosition.y;
-      let rad = Math.atan2(y, x);
-  
-      let deg = (rad * 180) / Math.PI;
+  const handleMouseMove = (e) => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
+  };
 
-      console.log(deg)
-  
-      return (deg - 270 + 360) % 360; 
-    };
-  
-    useEffect(() => {
-      const calculatedAngle = isMouseInside ? calculateGradientAngle() : gradientAngle;
-      setGradientAngle(calculatedAngle);
-      setDynamicBackgroundStyle({ background: `linear-gradient(${calculatedAngle}deg, rgba(255, 255, 255, 0.2) 1.56%, rgba(255, 255, 255, 0) 100%)` });
-      // eslint-disable-next-line
-    }, [isMouseInside, mousePosition]);
-  
-    const smoothGradientAngleTransition = (fadeOut = true) => {
-      let startTime = null;
+  const calculateGradientAngle = () => {
+    const divElement = divRef.current;
+    const { left, top, width, height } = divElement.getBoundingClientRect();
 
-      const step = (currentTime) => {
-        if (startTime === null) startTime = currentTime;
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / 400, 1);   // 400ms transition -> increase it to slow down the transition
+    const centerX = left + width / 2;
+    const centerY = top + height / 2;
 
-        const opacity = fadeOut ? 0.2 - progress * 0.2 : progress * 0.2;
+    const x = -mousePosition.x + centerX;
+    const y = centerY - mousePosition.y;
+    let rad = Math.atan2(y, x);
 
-        console.log("progress: ", progress, opacity)
-        const newBackgroundStyle = `linear-gradient(${fadeOut ? gradientAngle : 180}deg, rgba(255, 255, 255, ${opacity}) 1.56%, rgba(255, 255, 255, 0) 100%)`;
+    let deg = (rad * 180) / Math.PI;
 
-        setDynamicBackgroundStyle({ background: newBackgroundStyle });
+    console.log(deg);
 
-        if (progress < 1) {
-          requestAnimationFrame(step);
-        }
-      };
+    return (deg - 270 + 360) % 360;
+  };
 
-      requestAnimationFrame(step);
-    };
-    
-    const [dynamicBackgroundStyle, setDynamicBackgroundStyle] = useState({
-      background: `linear-gradient(${gradientAngle}deg, rgba(255, 255, 255, 0.2) 1.56%, rgba(255, 255, 255, 0) 100%)`,
+  useEffect(() => {
+    const calculatedAngle = isMouseInside
+      ? calculateGradientAngle()
+      : gradientAngle;
+    setGradientAngle(calculatedAngle);
+    setDynamicBackgroundStyle({
+      background: `linear-gradient(${calculatedAngle}deg, rgba(255, 255, 255, 0.2) 1.56%, rgba(255, 255, 255, 0) 100%)`,
     });
-  
+    // eslint-disable-next-line
+  }, [isMouseInside, mousePosition]);
+
+  const smoothGradientAngleTransition = (fadeOut = true) => {
+    let startTime = null;
+
+    const step = (currentTime) => {
+      if (startTime === null) startTime = currentTime;
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / 400, 1); // 400ms transition -> increase it to slow down the transition
+
+      const opacity = fadeOut ? 0.2 - progress * 0.2 : progress * 0.2;
+
+      console.log("progress: ", progress, opacity);
+      const newBackgroundStyle = `linear-gradient(${
+        fadeOut ? gradientAngle : 180
+      }deg, rgba(255, 255, 255, ${opacity}) 1.56%, rgba(255, 255, 255, 0) 100%)`;
+
+      setDynamicBackgroundStyle({ background: newBackgroundStyle });
+
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      }
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  const [dynamicBackgroundStyle, setDynamicBackgroundStyle] = useState({
+    background: `linear-gradient(${gradientAngle}deg, rgba(255, 255, 255, 0.2) 1.56%, rgba(255, 255, 255, 0) 100%)`,
+  });
 
   return (
-    <div className="about-body">
+    <div className="about-body" id="about">
       <div className="about-us__container">
         <div className="about-us__heading">ABOUT US</div>
         <div className="about-us__content">
@@ -109,13 +112,13 @@ export default function About() {
               <h6 className="about-us__subtitle">IEEE Sight members</h6>
             </div>
           </div>
-          <div 
-                className="about-us__paragraphs"
-                style={dynamicBackgroundStyle}
-                ref={divRef}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-                onMouseMove={handleMouseMove}
+          <div
+            className="about-us__paragraphs"
+            style={dynamicBackgroundStyle}
+            ref={divRef}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            onMouseMove={handleMouseMove}
           >
             <div className="about-us__para_wrapper">
               <p className="about-us__p1">

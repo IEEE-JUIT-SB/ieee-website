@@ -3,7 +3,7 @@ import "./UpcomingEvent.css";
 
 export default function UpcomingEvents() {
   return (
-    <div id="upcoming_events">
+    <div id="upcoming-events">
       <div className="upcoming_events-head">UPCOMING EVENTS</div>
 
       <div className="container">

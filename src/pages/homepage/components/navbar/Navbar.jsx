@@ -1,26 +1,30 @@
-import React, { useEffect, useState } from "react";
-import IEEE_LOGO from "./Assets/IEEE-JUIT(white).png";
+import React, { useState } from "react";
 import "./Navbar.css";
-import "@fontsource/ibm-plex-mono/400-italic.css";
-import { Link as ScrollLink, animateScroll } from "react-scroll";
-import { useLocation, useNavigate } from "react-router-dom";
+import IEEE from "./Assets/IEEE-JUIT(white).png";
+import { Cross as Hamburger } from "hamburger-react";
+import { animateScroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 
-export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
+function Navbar() {
+  const [Navbar, setNavbar] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-    };
+  const changeBackground = () => {
+    if (window.scrollY >= 10) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
 
-    window.addEventListener("scroll", handleScroll);
+  window.addEventListener("scroll", changeBackground);
+  const [isOpen, setOpen] = useState(false);
 
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const [isOpen1, setIsOpen1] = useState(false);
+
+  const onClickNavbar = () => {
+    setIsOpen1(!isOpen1);
+  };
 
   const options = {
     duration: 500,
@@ -31,52 +35,90 @@ export default function Navbar() {
   const navigate = useNavigate();
 
   const handleScrollToTop = () => {
-    // If already on the main page ("/"), scroll to top
-    // Otherwise, redirect to the main page and scroll to top
-    if (location.pathname === "/") {
-      animateScroll.scrollToTop(options);
-    } else {
+    if (location.pathname !== "/") {
       navigate("/");
-      animateScroll.scrollToTop(options);
     }
+    animateScroll.scrollToTop(options);
   };
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-      <div>
-        <ScrollLink
-          //  to top
-          className="logo"
-          onClick={handleScrollToTop}
-          {...options}
-        >
-          <img
-            src={IEEE_LOGO}
-            alt="IEEE logo"
-            height={65}
-            style={{ marginTop: "10px" }}
-          />
+    <div className={Navbar ? "navbar active" : "navbar"}>
+      <div
+        className={`navbar-wrapper ${isOpen1 ? "navbar-wrapper active" : ""} `}
+      >
+        <ScrollLink className="logo" onClick={handleScrollToTop} {...options}>
+          <img onClick={"/"} className="navbar-logo" src={IEEE} />
         </ScrollLink>
+        <div onClick={onClickNavbar} className="menu">
+          <Hamburger toggled={isOpen} toggle={setOpen} />
+        </div>
+
+        <div className="nav-items">
+          <ul>
+            <li>
+              <ScrollLink
+                activeClass="active-nav"
+                to="home"
+                spy={true}
+                onClick={handleScrollToTop}
+                {...options}
+              >
+                HOME
+              </ScrollLink>
+            </li>
+
+            <li>
+              <ScrollLink
+                activeClass="active-nav"
+                to="about"
+                spy={true}
+                onClick={handleScrollToTop}
+                {...options}
+              >
+                ABOUT US
+              </ScrollLink>
+            </li>
+
+            <li>
+              <ScrollLink
+                activeClass="active-nav"
+                to="upcoming-events"
+                spy={true}
+                onClick={handleScrollToTop}
+                {...options}
+              >
+                EVENTS
+              </ScrollLink>
+            </li>
+
+            <li>
+              <ScrollLink
+                activeClass="active-nav"
+                to="testimonial"
+                spy={true}
+                onClick={handleScrollToTop}
+                {...options}
+              >
+                TESTIMONIALS
+              </ScrollLink>
+            </li>
+
+            <li>
+              <ScrollLink
+                activeClass="active-nav"
+                to="contact-us"
+                spy={true}
+                onClick={handleScrollToTop}
+                {...options}
+              >
+                CONTACT US
+              </ScrollLink>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="right-nav">
-        <li className="list">
-          <li className="list">
-            <button className="text-button">HOME</button>
-          </li>
-          <li className="list">
-            <button className="text-button">ABOUT US</button>
-          </li>
-          <li className="list">
-            <button className="text-button">MEMBERSHIP</button>
-          </li>
-          <li className="list">
-            <button className="text-button">COUNCIL</button>
-          </li>
-          <li className="list">
-            <button className="text-button">EVENTS</button>
-          </li>
-        </li>
-      </div>
-    </nav>
+    </div>
   );
 }
+
+export default Navbar;

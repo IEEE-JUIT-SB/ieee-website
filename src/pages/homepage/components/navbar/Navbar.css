@@ -1,51 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .navbar {
-    background-color: transparent;
+  position: fixed;
+  background: transparent;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+}
+.navbar-wrapper {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar.active {
+  background: rgb(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+}
+.logo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.navbar-logo {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 120px;
+}
+.navbar-logo img {
+  width: 120px;
+}
+.active-nav {
+  color: #fff;
+  text-shadow: 0 0 0.5rem #e093fd;
+  animation: active-nav-link 3s ease infinite;
+}
+@keyframes active-nav-link {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 0.5rem #e093fd;
+  }
+  50% {
+    color: #fff;
+    text-shadow: 0 0 0.7rem #e093fd;
+  }
+}
+.nav-items ul {
+  position: relative;
+  display: flex;
+  height: 8vh;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-items ul {
+  list-style: none;
+}
+.nav-items ul a {
+  color: rgb(189, 186, 186);
+  text-decoration: none;
+  cursor: pointer;
+  font-family: font2;
+}
+.nav-items ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 0.7rem #e093fd;
+  transition: all 0.3s ease;
+}
+.nav-items ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+.navbar-nav-lines,
+.navbar-nav-line {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .nav-items ul {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: flex;
+    height: 7vh;
+    color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: end;
+    z-index: 1000;
+  }
+
+  .navbar-logo img {
+    width: 78px;
+    height: 37px;
+    z-index: 100;
+  }
+
+  .navbar-wrapper .nav-items ul {
+    flex-direction: column;
     position: fixed;
+    width: 100vw;
+    height: 0vh;
+    background: black;
     top: 0;
     left: 0;
+    justify-content: start;
+    overflow: hidden;
+  }
+
+  .navbar-wrapper.active .nav-items ul {
+    flex-direction: column;
+    padding-top: 8vh;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    transition: all 400ms ease;
+  }
+  .navbar-wrapper.active .navbar-nav-lines {
+    display: inline;
+    width: 50%;
+    height: 0px;
+    background-color: #919191;
+    background: #919191;
+    border: 0.2px solid #919191;
+    margin-left: 25%;
+    margin-right: 25%;
+    transition: all 400ms ease;
+  }
+
+  .navbar-wrapper.active .navbar-nav-line {
+    display: inline;
     width: 100%;
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1000;
-    transition: background-color 0.3s ease; /* Add transition for a smooth color change */
+    height: 0px;
+    background-color: #919191;
+    background: #919191;
+    border: 0.5px solid #919191;
+    padding-left: 0;
+    padding-bottom: 0;
+    transition: all 400ms ease;
   }
-  
-  .navbar.scrolled {
-    background-color: black;
+  .navbar-wrapper.active .menu {
+    position: relative;
+    transition: all 400ms ease;
   }
-  
-  
-  
-  .navbar ul {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  .navbar li {
-    margin: 0 15px;
-    color: white;
-  }
-  
-  .text-button {
-    background: none;
-    border: none;
-    padding: 0;
-    font: inherit;
-    color: white; /* Set the color to match your text color */
-    text-decoration: none; /* Optional: Add an underline to mimic a link */
-    cursor: pointer;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 400;
-
-  }
-  .list {
-    display: flex;
-    padding: 10;
-
-    
-  }
-  .right-nav {
-    display: flex;
-    padding: 40;
-  }
+}

@@ -4,7 +4,7 @@ import "./Testimonials.css";
 export default function Testimonials() {
   return (
     <div id="testimonial">
-      <div class="heading" >TESTIMONIALS</div>
+      <div class="heading">TESTIMONIALS</div>
 
       <div class="test-content">
         <div class="test-pic">

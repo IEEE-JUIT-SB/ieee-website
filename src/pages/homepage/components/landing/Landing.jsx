@@ -16,7 +16,7 @@ const backgroundStyle = {
 
 export default function Landing() {
   return (
-    <div className="background-container">
+    <div className="background-container" id="home">
       <img src={landing_bg} alt="" style={backgroundStyle} />
       <div className="IEEE">
         <img src={IEEE} alt="" />

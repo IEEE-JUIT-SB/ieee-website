@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../homepage/components/navbar/Navbar";
 import "./NoPage.css";
-import Footer from "../homepage/components/Footer/Footer";
+import Footer from "../homepage/components/footer/Footer";
 import Asset from "./assets/asset.png";
+import Navbar from "../homepage/components/navbar/Navbar";
 
 export default function NoPage() {
   return (
