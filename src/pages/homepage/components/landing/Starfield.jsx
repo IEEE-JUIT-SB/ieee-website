@@ -28,7 +28,7 @@ const Starfield = () => {
       this.opacity = (Math.random() * 10 + 2) / 10;
       this.distance = (1 / this.opacity) * distance;
 
-      this.speed = ((Math.floor(Math.random() * 2.5) + 0.5) * Math.PI) / 360; // The rate at which this star will orbit
+      this.speed = ((Math.floor(Math.random() * 2.5) + 0.5) * Math.PI) / 390; // The rate at which this star will orbit
       this.rotation = 1000; // current Rotation
       this.startRotation =
         ((Math.floor(Math.random() * 360) + 0.5) * Math.PI) / 180; // Starting rotation.  If not random, all stars will be generated in a single line.
@@ -57,9 +57,11 @@ const Starfield = () => {
       };
     }
 
-    function Emitter(x, y) {
+    function Emitter(x, y, screenWidth) {
+      // Adjust the initial radius based on screen width
+      const initialRadius = screenWidth < 1250 ? 100 : 150;
       this.position = { x: x, y: y };
-      this.radius = 170;
+      this.radius = initialRadius;
       this.count = 1000;
       this.particles = [];
 
@@ -93,7 +95,12 @@ const Starfield = () => {
       },
     };
 
-    const emitter = new Emitter(canvas.width / 2, canvas.height / 2);
+    const screenWidth = window.innerWidth;
+    const emitter = new Emitter(
+      canvas.width / 2,
+      canvas.height / 2,
+      screenWidth
+    );
 
     function loop() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
