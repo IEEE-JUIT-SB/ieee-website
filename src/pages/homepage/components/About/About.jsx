@@ -11,6 +11,8 @@ import Asset7 from "./Assets/asset7.svg";
 import Asset8 from "./Assets/asset8.svg";
 import Asset9 from "./Assets/asset9.svg";
 import Asset10 from "./Assets/asset10.svg";
+import Asset11 from "./Assets/asset11.svg";
+import AboutBG from "./Assets/bg.png";
 
 export default function About() {
   const [isMouseInside, setIsMouseInside] = useState(false);
@@ -124,20 +126,23 @@ export default function About() {
       <img src={Asset3} alt="" id="about-asset-17" />
       <img src={Asset3} alt="" id="about-asset-18" />
       <img src={Asset3} alt="" id="about-asset-19" />
+      <img src={Asset11} alt="" id="about-asset-20" />
+      <img src={Asset11} alt="" id="about-asset-21" />
+      <img src={AboutBG} alt="" id="about-bg" />
       <div className="about-us__container">
         <div className="about-us__heading">ABOUT US</div>
         <div className="about-us__content">
           <div className="about-us__stats">
             <div className="about-us__b1">
-              <h3 className="about-us__title">100</h3>
+              <h3 className="about-us__title">200+</h3>
               <h6 className="about-us__subtitle">IEEE members</h6>
             </div>
             <div className="about-us__b2">
-              <h3 className="about-us__title">100</h3>
+              <h3 className="about-us__title">100+</h3>
               <h6 className="about-us__subtitle">IEEE WIE members</h6>
             </div>
             <div className="about-us__b3">
-              <h3 className="about-us__title">100</h3>
+              <h3 className="about-us__title">120+</h3>
               <h6 className="about-us__subtitle">IEEE Sight members</h6>
             </div>
           </div>

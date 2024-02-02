@@ -19,6 +19,16 @@
   padding-bottom: 2rem;
   height: 100vh;
   position: relative;
+  /* overflow: hidden; */
+  /* background: url(./Assets/bg.png); */
+}
+#about-bg {
+  position: absolute;
+  mix-blend-mode: screen;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
 }
 #about-asset-1 {
   position: absolute;
@@ -182,6 +192,23 @@
   }
 }
 
+#about-asset-20 {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 30%;
+  z-index: 2;
+  mix-blend-mode: exclusion;
+}
+#about-asset-21 {
+  position: absolute;
+  top: -15%;
+  right: 0%;
+  width: 30%;
+  z-index: 2;
+  rotate: 180deg;
+  mix-blend-mode: exclusion;
+}
 .about-us__container {
   margin-inline: 8%;
 }
