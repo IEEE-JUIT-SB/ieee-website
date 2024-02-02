@@ -1,6 +1,16 @@
 import React, { useRef, useState, useEffect } from "react";
 
 import "./About.css";
+import Asset1 from "./Assets/asset1.svg";
+import Asset2 from "./Assets/asset2.svg";
+import Asset3 from "./Assets/asset3.svg";
+import Asset4 from "./Assets/asset4.svg";
+import Asset5 from "./Assets/asset5.svg";
+import Asset6 from "./Assets/asset6.svg";
+import Asset7 from "./Assets/asset7.svg";
+import Asset8 from "./Assets/asset8.svg";
+import Asset9 from "./Assets/asset9.svg";
+import Asset10 from "./Assets/asset10.svg";
 
 export default function About() {
   const [isMouseInside, setIsMouseInside] = useState(false);
@@ -95,6 +105,25 @@ export default function About() {
 
   return (
     <div className="about-body" id="about">
+      <img src={Asset1} alt="" id="about-asset-1" />
+      <img src={Asset2} alt="" id="about-asset-2" />
+      <img src={Asset3} alt="" id="about-asset-3" />
+      <img src={Asset4} alt="" id="about-asset-4" />
+      <img src={Asset5} alt="" id="about-asset-5" />
+      <img src={Asset6} alt="" id="about-asset-6" />
+      <img src={Asset7} alt="" id="about-asset-7" />
+      <img src={Asset8} alt="" id="about-asset-8" />
+      <img src={Asset9} alt="" id="about-asset-9" />
+      <img src={Asset3} alt="" id="about-asset-10" />
+      <img src={Asset10} alt="" id="about-asset-11" />
+      <img src={Asset3} alt="" id="about-asset-12" />
+      <img src={Asset4} alt="" id="about-asset-13" />
+      <img src={Asset3} alt="" id="about-asset-14" />
+      <img src={Asset3} alt="" id="about-asset-15" />
+      <img src={Asset3} alt="" id="about-asset-16" />
+      <img src={Asset3} alt="" id="about-asset-17" />
+      <img src={Asset3} alt="" id="about-asset-18" />
+      <img src={Asset3} alt="" id="about-asset-19" />
       <div className="about-us__container">
         <div className="about-us__heading">ABOUT US</div>
         <div className="about-us__content">
@@ -122,6 +151,7 @@ export default function About() {
           >
             <div className="about-us__para_wrapper">
               <p className="about-us__p1">
+                <h3>IEEE JUIT SB</h3>
                 The JUIT IEEE Student Branch stands as a dynamic and pioneering
                 arm of the IEEE organization, dedicated to facilitating the
                 fulfillment of its core mission. Our primary objectives revolve

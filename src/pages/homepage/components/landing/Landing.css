@@ -1,3 +1,6 @@
+#home {
+  z-index: 1;
+}
 .background-container {
   position: relative;
   width: 100%;
@@ -75,7 +78,7 @@
 }
 .starfield {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   top: 6%;
   right: -1%;
 }

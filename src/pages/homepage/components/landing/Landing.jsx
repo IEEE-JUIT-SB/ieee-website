@@ -1,11 +1,6 @@
 import React from "react";
 import "./Landing.css";
-import box from "./Assets/Rectangle3.png";
-import IEEE from "./Assets/IEEE.png";
-import middleText from "./Assets/DREAM. DESIGN. DEVELOP..png";
-import img1 from "./Assets/img1.png";
-import img2 from "./Assets/img2.png";
-import img3 from "./Assets/img3.png";
+import IEEE from "./Assets/ieee.png";
 import "./LandingBG.css";
 import Starfield from "./Starfield";
 import Asset2 from "./Assets/asset2.png";
@@ -35,8 +30,9 @@ export default function Landing() {
       </div>
 
       <div className="landing-section1">
-        <h1 id="ieee-landing">IEEE</h1>
-        <h2 id="ieee-quote">DREAM . DESIGN . DEVELOP</h2>
+        <img src={IEEE} alt="" />
+        {/* <h1 id="ieee-landing">IEEE</h1>
+        <h2 id="ieee-quote">DREAM . DESIGN . DEVELOP</h2> */}
       </div>
       <div className="landing-section2"></div>
     </div>
