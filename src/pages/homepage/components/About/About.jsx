@@ -128,6 +128,8 @@ export default function About() {
       <img src={Asset3} alt="" id="about-asset-19" />
       <img src={Asset11} alt="" id="about-asset-20" />
       <img src={Asset11} alt="" id="about-asset-21" />
+      <img src={Asset11} alt="" id="about-asset-22" />
+      <img src={Asset11} alt="" id="about-asset-23" />
       <img src={AboutBG} alt="" id="about-bg" />
       <div className="about-us__container">
         <div className="about-us__heading">ABOUT US</div>

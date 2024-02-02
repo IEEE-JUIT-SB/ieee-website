@@ -1,42 +1,39 @@
 import React from "react";
 import "./UpcomingEvent.css";
+import UEBox from "./UEBox";
+import { Link } from "react-router-dom";
 
 export default function UpcomingEvents() {
   return (
     <div id="upcoming-events">
-      <div className="upcoming_events-head">UPCOMING EVENTS</div>
+      <h4 className="upcoming-events-head">UPCOMING EVENTS</h4>
 
-      <div className="container">
-        <div className="box">
-          <span />
-          <div className="content">
-            <h2>08 Sept</h2>
-            <h3>Title of event</h3>
-            <div className="content_before">Title of event</div>
-            <br />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-          </div>
+      <div className="ue-container">
+        <div className="ue-cards">
+          <UEBox
+            date="08"
+            month="March"
+            name="R&D Expo"
+            about="R&D Expo is one of the biggest tech fest and flagship event of IEEE JUIT SB."
+          />
+          <UEBox
+            date="06"
+            month="April"
+            name="Enigma"
+            about="R&D Expo is one of the biggest tech fest and flagship event of IEEE JUIT SB."
+          />
+          <UEBox
+            date="02"
+            month="May"
+            name="Mindscape"
+            about="R&D Expo is one of the biggest tech fest and flagship event of IEEE JUIT SB."
+          />
         </div>
-        <div className="box">
-          <span />
-          <div className="content">
-            <h2>12 Sept</h2>
-            <h3>Title of event</h3>
-            <br />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-          </div>
-        </div>
-        <div className="box">
-          <span />
-          <div className="content">
-            <h2>16 Sept</h2>
-            <h3>Title of event</h3>
-            <br />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
-          </div>
+        <div className="ue-bottom-content">
+          <div className="card"></div>
+          <Link to="/past-events">Past Events ➡</Link>
         </div>
       </div>
-      <div className="card"></div>
     </div>
   );
 }
