@@ -57,7 +57,7 @@
     transform: scale(0.2);
     animation-timing-function: ease-in;
   }
-  85% {
+  55% {
     opacity: 1;
     transform: scale(1.6);
     animation-timing-function: linear;

@@ -28,7 +28,7 @@ const Starfield = () => {
       this.opacity = (Math.random() * 10 + 2) / 10;
       this.distance = (1 / this.opacity) * distance;
 
-      this.speed = ((Math.floor(Math.random() * 2.5) + 0.5) * Math.PI) / 390; // The rate at which this star will orbit
+      this.speed = ((Math.floor(Math.random() * 2.5) + 0.5) * Math.PI) / 500; // The rate at which this star will orbit
       this.rotation = 1000; // current Rotation
       this.startRotation =
         ((Math.floor(Math.random() * 360) + 0.5) * Math.PI) / 180; // Starting rotation.  If not random, all stars will be generated in a single line.
