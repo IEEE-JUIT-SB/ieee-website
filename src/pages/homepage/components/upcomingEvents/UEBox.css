@@ -176,9 +176,12 @@
   opacity: 1; /* Hide h2 when box is hovered */
 }
 
-.ue-card-date h6 {
+.ue-card-date h5 {
   font-size: 42px;
   line-height: 45px;
+}
+.ue-card-date h6 {
+  font-size: 22px;
 }
 .ue-card-date {
   font-size: 22px;

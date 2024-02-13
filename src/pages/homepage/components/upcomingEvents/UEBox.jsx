@@ -8,8 +8,8 @@ export default function UEBox(parse) {
         <span />
         <div className="content">
           <div className="ue-card-date">
-            <h6>{parse.date}</h6>
-            {parse.month}
+            <h5>{parse.date}</h5>
+            {parse.month},<h6>{parse.year}</h6>
           </div>
           <h2>{parse.name}</h2>
           <p>{parse.about}</p>

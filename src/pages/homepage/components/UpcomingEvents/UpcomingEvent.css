@@ -3,8 +3,9 @@
 #upcoming-events {
   background-color: #040115;
   /* background-image: url("./upcomingevents_bg.png"); */
+  /* background: url(./Assets/ue-bg.jpg); */
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   min-height: 700px;
   height: 100vh;
   overflow: hidden;
@@ -12,6 +13,13 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+#uebg {
+  position: absolute;
+  mix-blend-mode: exclusion;
+  z-index: 0;
+  width: 81%;
+  top: 17.7%;
 }
 
 .upcoming-events-head {
@@ -22,6 +30,7 @@
   padding-top: 4rem;
   text-shadow: 0 0 0.2rem #e093fd;
   animation: floatAnimation 5s ease infinite;
+  z-index: 1;
 }
 
 .ue-container {
@@ -40,9 +49,10 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
+  z-index: 2;
 }
 
-.card {
+.bottom-card {
   height: 160px;
   width: 700px;
   /* margin-left: 200px; */
@@ -53,6 +63,7 @@
   border-radius: 8px;
   color: #fff;
   margin-left: 10%;
+  z-index: 2;
 }
 .ue-bottom-content {
   display: flex;
@@ -66,4 +77,343 @@
   font-size: 24px;
   text-decoration: none;
   color: white;
+  transition: ease 0.5s;
+}
+.ue-bottom-content a:hover {
+  text-shadow: 0 0 0.3rem #e093fd;
+}
+.bottom-card {
+  padding: 20px;
+}
+.bottom-card h4 {
+  font-size: 16px;
+}
+.bottom-card p:nth-child(2) {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: justify;
+}
+.bottom-card p:nth-child(2) span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.bottom-card p:nth-child(3),
+.bottom-card p:nth-child(4) {
+  font-size: 14px;
+  font-weight: bold;
+}
+.bottom-card p:nth-child(3) text,
+.bottom-card p:nth-child(4) text {
+  font-size: 14px;
+  font-weight: normal;
+}
+.ue-assets {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+}
+.ue-asset1 {
+  width: 90px;
+  height: 90px;
+  left: 8%;
+  top: 15%;
+  animation: ue-asset-animation 5s linear infinite;
+}
+.ue-asset3 {
+  width: 50px;
+  height: 50px;
+  left: 9%;
+  top: 16%;
+  animation: ue-asset-animation 7s linear infinite;
+}
+.ue-asset2 {
+  width: 150px;
+  height: 150px;
+  right: 5%;
+  top: 10%;
+  animation: ue-asset-animation 5s linear infinite;
+}
+.ue-asset4 {
+  width: 20px;
+  height: 20px;
+  right: 9%;
+  top: 19%;
+  background: rgba(255, 255, 255, 0.15);
+  animation: ue-asset-animation1 5s linear infinite;
+}
+.ue-asset5 {
+  width: 16px;
+  height: 16px;
+  right: 9%;
+  top: 19%;
+  animation: ue-asset-animation1 7s linear infinite;
+}
+.ue-asset6 {
+  width: 22px;
+  height: 22px;
+  right: 9%;
+  top: 19%;
+  animation: ue-asset-animation1 10s alternate infinite;
+}
+.ue-asset7 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 150px;
+  height: 150px;
+  left: 45%;
+  top: 45%;
+  /* animation: ue-asset-animation1 10s alternate infinite; */
+}
+.ue-asset8 {
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 20px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation2 5s linear infinite;
+}
+.ue-asset9 {
+  background: rgba(255, 255, 255, 0.3);
+  width: 16px;
+  height: 16px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation3 8s linear infinite;
+}
+.ue-asset10 {
+  background: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation4 11s linear infinite;
+}
+.ue-asset11 {
+  background: rgba(255, 255, 255, 0.4);
+  width: 30px;
+  height: 30px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation5 14s linear infinite;
+}
+.ue-asset12 {
+  background: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation6 14s linear infinite;
+}
+.ue-asset12 {
+  background: rgba(255, 255, 255, 0.2);
+  width: 7px;
+  height: 7px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation6 17s linear infinite;
+}
+.ue-asset13 {
+  background: rgba(255, 255, 255, 0.2);
+  width: 5px;
+  height: 5px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation6 20s linear infinite;
+}
+.ue-asset14 {
+  background: rgba(255, 255, 255, 0.5);
+  width: 6px;
+  height: 6px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation6 15s linear infinite;
+}
+.ue-asset15 {
+  background: rgba(255, 255, 255, 0.7);
+  width: 4px;
+  height: 4px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation6 12s linear infinite;
+}
+.ue-asset16 {
+  background: rgba(255, 255, 255, 0.7);
+  width: 4px;
+  height: 4px;
+  left: 49%;
+  top: 55%;
+  animation: ue-asset-animation6 12s linear infinite;
+}
+@keyframes ue-asset-animation {
+  from {
+    transform: rotate(0deg) translateX(20px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
+}
+@keyframes ue-asset-animation1 {
+  from {
+    transform: rotate(0deg) translateX(80px) rotate(0deg);
+    background: rgba(255, 255, 255, 0.5);
+  }
+  to {
+    transform: rotate(360deg) translateX(80px) rotate(-360deg);
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+@keyframes ue-asset-animation2 {
+  from {
+    transform: rotate(0deg) translateX(90px) rotate(0deg);
+    background: rgba(255, 255, 255, 0.5);
+  }
+  to {
+    transform: rotate(360deg) translateX(90px) rotate(-360deg);
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+@keyframes ue-asset-animation3 {
+  from {
+    transform: rotate(0deg) translateX(130px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(130px) rotate(-360deg);
+  }
+}
+@keyframes ue-asset-animation4 {
+  from {
+    transform: rotate(0deg) translateX(170px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(170px) rotate(-360deg);
+  }
+}
+@keyframes ue-asset-animation5 {
+  from {
+    transform: rotate(0deg) translateX(220px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(220px) rotate(-360deg);
+  }
+}
+@keyframes ue-asset-animation6 {
+  from {
+    transform: rotate(0deg) translateX(290px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(290px) rotate(-360deg);
+  }
+}
+@keyframes ue-asset-animation7 {
+  from {
+    transform: rotate(0deg) translateX(300px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(300px) rotate(-360deg);
+  }
+}
+@keyframes ue-asset-animation8 {
+  from {
+    transform: rotate(0deg) translateX(280px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(280px) rotate(-360deg);
+  }
+}
+@keyframes ue-asset-animation9 {
+  from {
+    transform: rotate(0deg) translateX(285px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(285px) rotate(-360deg);
+  }
+}
+@keyframes ue-asset-animation10 {
+  from {
+    transform: rotate(0deg) translateX(295px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(295px) rotate(-360deg);
+  }
+}
+.ue-asset101 {
+  background: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  height: 50px;
+  left: 48%;
+  top: 52%;
+  animation: ue-asset-animation11 18s linear infinite;
+}
+@keyframes ue-asset-animation11 {
+  from {
+    transform: rotate(0deg) translateX(210px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(210px) rotate(-360deg);
+  }
+}
+.ue-asset102 {
+  background: rgba(255, 255, 255, 0.2);
+  width: 32px;
+  height: 32px;
+  left: 48%;
+  top: 52%;
+  animation: ue-asset-animation12 25s linear infinite;
+}
+@keyframes ue-asset-animation12 {
+  from {
+    transform: rotate(0deg) translateX(165px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(165px) rotate(-360deg);
+  }
+}
+.ue-asset103 {
+  background: rgba(255, 255, 255, 0.4);
+  width: 32px;
+  height: 32px;
+  left: 48%;
+  top: 52%;
+  animation: ue-asset-animation13 30s linear infinite;
+}
+@keyframes ue-asset-animation13 {
+  from {
+    transform: rotate(0deg) translateX(360px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(360px) rotate(-360deg);
+  }
+}
+.ue-asset104 {
+  background: rgba(255, 255, 255, 0.4);
+  width: 50px;
+  height: 50px;
+  left: 48%;
+  top: 52%;
+  animation: ue-asset-animation14 35s linear infinite;
+}
+@keyframes ue-asset-animation14 {
+  from {
+    transform: rotate(0deg) translateX(410px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(410px) rotate(-360deg);
+  }
+}
+.ue-asset105 {
+  background: rgba(255, 255, 255, 0.4);
+  width: 26px;
+  height: 26px;
+  left: 48%;
+  top: 52%;
+  animation: ue-asset-animation15 27s linear infinite;
+}
+@keyframes ue-asset-animation15 {
+  from {
+    transform: rotate(0deg) translateX(470px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(470px) rotate(-360deg);
+  }
 }

@@ -1,0 +1,56 @@
+@function random($min, $max) {
+  @return random() * ($max - $min) + $min;
+}
+.ue-asset16,
+.ue-asset17,
+.ue-asset18,
+.ue-asset19,
+.ue-asset20,
+.ue-asset21,
+.ue-asset22,
+.ue-asset23,
+.ue-asset24,
+.ue-asset25,
+.ue-asset26,
+.ue-asset27,
+.ue-asset28,
+.ue-asset29,
+.ue-asset30,
+.ue-asset31,
+.ue-asset32,
+.ue-asset33,
+.ue-asset34,
+.ue-asset35,
+.ue-asset36,
+.ue-asset37,
+.ue-asset38,
+.ue-asset39,
+.ue-asset40,
+.ue-asset41,
+.ue-asset42,
+.ue-asset43,
+.ue-asset44,
+.ue-asset45,
+.ue-asset46,
+.ue-asset47,
+.ue-asset48,
+.ue-asset49,
+.ue-asset50,
+.ue-asset51,
+.ue-asset52,
+.ue-asset53,
+.ue-asset54,
+.ue-asset55,
+.ue-asset56,
+.ue-asset57,
+.ue-asset58,
+.ue-asset59,
+.ue-asset60 {
+  position: absolute;
+  width: random(1px, 100px);
+  height: random(1px, 100px);
+  left: random(0, 100%);
+  top: random(0, 100%);
+  background: rgba(255, 255, 255, random(0.1, 1));
+  animation: ue-asset-animation6 12s linear infinite;
+}
