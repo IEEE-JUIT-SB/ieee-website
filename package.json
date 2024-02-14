@@ -14,8 +14,10 @@
     "react-random-reveal": "^2.0.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
+    "react-slick": "^0.30.1",
     "sass": "^1.70.0",
     "sass-loader": "^14.1.0",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
