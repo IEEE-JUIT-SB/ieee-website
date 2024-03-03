@@ -11,14 +11,14 @@
   display: flex;
   flex-direction: column;
   padding-top: 4.3rem;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   align-items: center;
   position: relative;
 }
 #conbg {
   position: absolute;
   width: 87%;
-  top: 0;
+  top: -4px;
   mix-blend-mode: exclusion;
   z-index: 0;
 }

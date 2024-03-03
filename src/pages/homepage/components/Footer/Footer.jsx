@@ -1,11 +1,27 @@
 import React from "react";
 import "./Footer.css";
+import { CiFacebook } from "react-icons/ci";
+import { CiLinkedin } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
+import { CiYoutube } from "react-icons/ci";
 // import { Link } from "react-router-dom";
 
+const GoogleMap = ({ width, height }) => {
+  const iframe = (
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d54709.568912423674!2d77.070159!3d31.016551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39057db24364e085%3A0x4f4fefd65caa0317!2sJaypee%20University%20of%20Information%20Technology!5e0!3m2!1sen!2sin!4v1709467611924!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  );
+  return <div>{iframe}</div>;
+};
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="sb_footer section_padding">
+      <div className="sb_footer">
         <div className="sb_footer-links">
           <div className="sb_footer-links_div">
             <h4>PAGE SECTIONS</h4>
@@ -47,10 +63,10 @@ const Footer = () => {
           </div>
           <div className="sb_footer-links_div">
             <h4>SOCIAL LINKS</h4>
-            <a href="">FACEBOOK</a>
-            <a href="">LINKEDIN</a>
-            <a href="">INSTAGRAM</a>
-            <a href="">YOUTUBE</a>
+            <a href="">FACEBOOK <CiFacebook className="social-icons"/></a>
+            <a href="">LINKEDIN <CiLinkedin className="social-icons"/></a>
+            <a href="">INSTAGRAM <CiInstagram className="social-icons"/></a>
+            <a href="">YOUTUBE <CiYoutube className="social-icons"/></a>
           </div>
         </div>
       </div>
@@ -58,11 +74,9 @@ const Footer = () => {
       <hr></hr>
 
       <div className="sb_footer-below">
-        <div className="sb_footer-below-links">
           <div className="map-responsive">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27351.685474749993!2d77.081115!3d31.027345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39057db24364e085%3A0x4f4fefd65caa0317!2sJaypee%20University%20of%20Information%20Technology!5e0!3m2!1sen!2sin!4v1699518717106!5m2!1sen!2sin"></iframe>
+            <GoogleMap />
           </div>
-        </div>
         <div className="sb_footer-copyright">
           <p>@{new Date().getFullYear()} ALL RIGHTS RESERVED IEEE JUIT-SB</p>
         </div>

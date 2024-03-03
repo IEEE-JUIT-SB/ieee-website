@@ -1,24 +1,21 @@
-.section_padding {
-  padding: 2rem 4rem;
-}
 .footer {
   background-color: #060313;
   height: 100vh;
+  z-index: 2;
 }
 .sb_footer {
   display: flex;
   flex-direction: column;
+  padding: 5rem 4rem 0 4rem;
 }
 .sb_footer-links {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
-
   flex-wrap: wrap;
   width: 100%;
   text-align: left;
-  margin-bottom: 2rem;
 }
 .sb_footer-links_div {
   width: 150px;
@@ -28,51 +25,46 @@
   flex-direction: column;
   color: white;
 }
+.sb_footer-links_div h4 {
+  font-size: 18px;
+  line-height: 0px;
+  margin-bottom: 0.9rem;
+}
 .sb_footer-links_div a {
   color: rgb(175, 175, 179);
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
   line-height: 25px;
-}
-.socialmedia {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 }
-
-.socialmedia img {
-  width: 80%;
-}
-.sb_footer-links_div h4 {
+.social-icons{
   font-size: 18px;
-  line-height: 0px;
-  margin-bottom: 0.9rem;
 }
-.sb_footer-links_div p {
-  font-size: 14px;
-  line-height: 15px;
-  margin: 0.5rem 0;
-  cursor: pointer;
+hr {
+  color: white !important;
+  width: 100%;
 }
 .sb_footer-below {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 0.2rem;
+  background-color: var(--color1);
 }
-.sb_footer-below-links {
-  display: flex;
-  flex-direction: row;
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 25%;
+  position: relative;
+  height: 0px;
+  margin-bottom: 2px;
 }
-.sb_footer-below-links p {
-  font-size: 13px;
-  line-height: 15px;
-  margin-left: 2rem;
-  color: white;
-  font-weight: 600;
-}
-hr {
-  color: white !important;
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  border: 0;
   width: 100%;
 }
 .sb_footer-copyright p {
@@ -83,6 +75,9 @@ hr {
   display: flex;
   justify-content: center;
   margin-top: 3.5px;
+}
+@media screen and (max-width: 2560px) {
+
 }
 @media screen and (max-width: 850px) {
   .sb_footer-heading h1 {
@@ -120,19 +115,4 @@ hr {
     font-size: 27px;
     line-height: 38px;
   }
-}
-
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 25%;
-  position: relative;
-  height: 0px;
-  margin-bottom: 2px;
-}
-.map-responsive iframe {
-  left: 0;
-  top: 0;
-  border: 0;
-  height: 450px;
-  width: 1599px;
 }
