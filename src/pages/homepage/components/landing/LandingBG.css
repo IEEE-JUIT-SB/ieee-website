@@ -1,8 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Orbitron:700);
-
-/* Stars 
-------------------------------------- */
-
 #space-warp,
 .stars {
   overflow: hidden;
@@ -12,7 +8,6 @@
   left: 0;
   right: 0;
 }
-
 .stars {
   background-image: radial-gradient(
       2px 2px at 20px 30px,
@@ -29,7 +24,6 @@
   animation: zoom 5s infinite;
   opacity: 0;
 }
-
 .stars:nth-child(1) {
   background-position: 50% 50%;
   animation-delay: 0s;
@@ -50,7 +44,6 @@
   background-position: -20% 30%;
   animation-delay: 4s;
 }
-
 @keyframes zoom {
   0% {
     opacity: 0;
@@ -67,5 +60,3 @@
     transform: scale(2.8);
   }
 }
-
-/* ---------------------------- */

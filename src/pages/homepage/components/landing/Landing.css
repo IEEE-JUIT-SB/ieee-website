@@ -1,8 +1,10 @@
 #home {
   z-index: 1;
   overflow: hidden;
-}
-.background-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -10,169 +12,29 @@
   background-color: #030014;
   z-index: -2;
 }
-.background-assets {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.background-assets img:nth-child(1) {
-  position: absolute;
-  right: 0;
-  bottom: 5%;
-  width: 300px;
-  animation: twinkle 5s infinite;
-}
-.background-assets img:nth-child(2) {
-  position: absolute;
-  right: 0;
-  bottom: 5%;
-  width: 300px;
-  rotate: 180deg;
-  animation: twinkle 10s infinite;
-}
-
-@keyframes twinkle {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-.box {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  margin-bottom: -43px; /* Adjust as needed */
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.box img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-#home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 #bg-asset {
-  position: absolute;
+  /* position: absolute; */
   top: 0%;
   left: 0%;
   width: 100%;
+  height: auto;
+  /* margin-top: 37%; */
   mix-blend-mode: exclusion;
   z-index: 2;
-  /* height: 100%; */
-  /* filter: brightness(0.8); */
 }
 .starfield {
   position: absolute;
+  width: 100%;
+  height: auto;
   z-index: 1;
   top: 6%;
-  right: -1%;
 }
 .landing-section1 {
+  position: absolute;
+  top: 10%;
   z-index: 5;
-  padding-bottom: 24rem;
 }
-#ieee-landing {
-  color: white;
-  font-family: font1;
-  font-size: 8rem;
-  z-index: 5;
-  line-height: 5rem;
-}
-#ieee-quote {
-  color: white;
-  font-family: font1;
-  font-size: 1.2rem;
-  z-index: 5;
-  padding-left: 0.5rem;
-}
-
-@media screen and (max-width: 1450px) {
-  .starfield {
-    top: 10%;
-    right: -2%;
-  }
-}
-@media screen and (max-width: 1400px) {
-  .starfield {
-    top: 8%;
-    right: -5%;
-  }
-}
-@media screen and (max-width: 1350px) {
-  .starfield {
-    top: 7.5%;
-    right: -3%;
-  }
-  #bg-asset {
-    width: 110%;
-    top: -5%;
-    left: -2%;
-  }
-}
-@media screen and (max-width: 1300px) {
-  .starfield {
-    top: 5%;
-    right: -5%;
-  }
-}
-@media screen and (max-width: 1250px) {
-  .starfield {
-    top: 0%;
-    right: -5%;
-  }
-  #bg-asset {
-    width: 120%;
-    top: -10%;
-    left: -8%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .starfield {
-    top: 0%;
-    right: -9%;
-  }
-}
-@media screen and (max-width: 1150px) {
-  .starfield {
-    top: -2%;
-    right: -10.5%;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .starfield {
-    top: -0%;
-    right: -12.5%;
-  }
-  #bg-asset {
-    width: 135%;
-    top: -10%;
-    left: -16%;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .starfield {
-    top: 5%;
-    right: -15.5%;
-  }
-  #bg-asset {
-    width: 145%;
-    top: -8%;
-    left: -20%;
-  }
+.particle{
+  width: 100% !important;
+  overflow: hidden !important;
 }
