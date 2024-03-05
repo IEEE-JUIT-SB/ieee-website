@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./UpcomingEvent.css";
 // import "./UEStyle.scss";
 import UEBox from "./UEBox";
@@ -7,7 +7,28 @@ import UEBG from "./Assets/ue-bg.png";
 
 function SpanTagsGenerator() {
   // Generate an array from 10 to 60
-  const numbers = Array.from({ length: 91 }, (_, i) => i + 10);
+  // const numbers = Array.from({ length: 91 }, (_, i) => i + 10);
+  const [numbers, setNumbers] = useState([]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 425) {
+        setNumbers([]);
+      } else {
+        const newNumbers = Array.from({ length: 91 }, (_, i) => i + 10);
+        setNumbers(newNumbers);
+      }
+    };
+
+    // Initial setup
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div>
@@ -55,7 +76,7 @@ export default function UpcomingEvents() {
       <span className="ue-asset103 ue-assets"></span>
       <span className="ue-asset104 ue-assets"></span>
       <span className="ue-asset105 ue-assets"></span>
-      <div>
+      <div id="span-tags">
         <SpanTagsGenerator />
       </div>
       <h4 className="upcoming-events-head">UPCOMING EVENTS</h4>

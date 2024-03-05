@@ -59,10 +59,11 @@ const Starfield = () => {
 
     function Emitter(x, y, screenWidth) {
       // Adjust the initial radius based on screen width
-      const initialRadius = screenWidth < 1250 ? 100 : 150;
+      const initialRadius = screenWidth < 1150 ? 80 : 150;
+      const count = screenWidth < 426 ? 250 : 1000;
       this.position = { x: x, y: y };
+      this.count = count;
       this.radius = initialRadius;
-      this.count = 1000;
       this.particles = [];
 
       for (let i = 0; i < this.count; i++) {

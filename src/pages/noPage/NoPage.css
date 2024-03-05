@@ -4,24 +4,27 @@
   align-items: center;
   background-color: black;
   color: white;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 .no-page-in {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: url(./assets/bg.gif);
   background-size: contain;
   overflow-x: hidden;
   position: relative;
 }
 .no-page-in-1 {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* padding-bottom: 50vh; */
+  position: absolute;
+  top: 6rem;
+  left: 0;
 }
 .no-page-in-1 h1 {
   padding-bottom: 50vh;
@@ -65,4 +68,12 @@
   100% {
     transform: rotate(360deg) translate(100px);
   }
+}
+
+.nopage-bg{
+  width: 100%;
+  z-index: 5 !important;
+  position: relative;
+  display: block;
+  margin: 0 !important;
 }

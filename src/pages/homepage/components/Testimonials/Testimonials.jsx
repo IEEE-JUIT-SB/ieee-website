@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Testimonials.css";
 import TBG from "./Assets/testimonials-bg.png";
 import TSlider from "./TSlider";
 
 function SpanTagsGeneratorT() {
   // Generate an array from 10 to 60
-  const numbers = Array.from({ length: 500 }, (_, i) => i);
+  // const numbers = Array.from({ length: 500 }, (_, i) => i);
+
+  const [numbers, setNumbers] = useState([]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 425) {
+        // If screen width is 425px or less, generate numbers from 10 to 59
+        const newNumbers = Array.from({ length: 50 }, (_, i) => i + 10);
+        setNumbers(newNumbers);
+      } else {
+        // Otherwise, generate numbers from 10 to 100
+        const newNumbers = Array.from({ length: 500 }, (_, i) => i + 10);
+        setNumbers(newNumbers);
+      }
+    };
+
+    // Initial setup
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div>
