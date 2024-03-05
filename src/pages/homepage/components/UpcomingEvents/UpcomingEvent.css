@@ -467,4 +467,7 @@
   .ue-bottom-content a{
     font-size: 18px;
   }
+  .span-tags{
+    display: none;
+  }
 }

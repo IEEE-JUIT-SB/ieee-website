@@ -55,7 +55,9 @@ export default function UpcomingEvents() {
       <span className="ue-asset103 ue-assets"></span>
       <span className="ue-asset104 ue-assets"></span>
       <span className="ue-asset105 ue-assets"></span>
-      <SpanTagsGenerator />
+      <div>
+        <SpanTagsGenerator />
+      </div>
       <h4 className="upcoming-events-head">UPCOMING EVENTS</h4>
       <img src={UEBG} alt="" id="uebg" />
       <div className="ue-container">
