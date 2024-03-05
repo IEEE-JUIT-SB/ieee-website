@@ -104,11 +104,12 @@
     align-content: center;
     justify-content: end;
     z-index: 1000;
+    margin-left: 15rem;
   }
 
-  .navbar-logo img {
-    width: 78px;
-    height: 37px;
+  .navbar-logo {
+    width: 70px;
+    /* height: 37px; */
     z-index: 100;
   }
 
@@ -158,5 +159,10 @@
   .navbar-wrapper.active .menu {
     position: relative;
     transition: all 400ms ease;
+  }
+  .navbar-wrapper{
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
   }
 }

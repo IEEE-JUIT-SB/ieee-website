@@ -38,7 +38,7 @@ export default function Testimonials() {
   return (
     <div id="testimonial">
       <SpanTagsGeneratorT />
-      <div class="heading">TESTIMONIALS</div>
+      <div class="testimonials-heading">TESTIMONIALS</div>
       <img src={TBG} alt="" id="tbg" />
       <div class="test-content">
         <TSlider />

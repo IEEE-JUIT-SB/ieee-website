@@ -76,7 +76,7 @@ export default function ContactUs() {
                 duration={4}
                 revealDuration={1.6}
                 characters="JUIT, Waknaghat SOLAN HP-173234"
-                onComplete={() => ({ shouldRepeat: false, delay: 3 })}
+                onComplete={() => ({ shouldRepeat: false, delay: 1 })}
               />
             </div>
             <div className="email">
@@ -88,7 +88,7 @@ export default function ContactUs() {
                   duration={4}
                   revealDuration={1.6}
                   characters="ieeejuit@juitsolan.in"
-                  onComplete={() => ({ shouldRepeat: false, delay: 3 })}
+                  onComplete={() => ({ shouldRepeat: false, delay: 1.5 })}
                 />
               </a>
             </div>
@@ -104,7 +104,7 @@ export default function ContactUs() {
                   duration={4}
                   revealDuration={1.6}
                   characters="ieeejuit"
-                  onComplete={() => ({ shouldRepeat: false, delay: 3 })}
+                  onComplete={() => ({ shouldRepeat: false, delay: 2 })}
                 />
               </a>
             </div>
@@ -117,7 +117,7 @@ export default function ContactUs() {
                   duration={4}
                   revealDuration={1.6}
                   characters="linkedin.com/ieeejuit"
-                  onComplete={() => ({ shouldRepeat: false, delay: 3 })}
+                  onComplete={() => ({ shouldRepeat: false, delay: 2.5 })}
                 />
               </a>
             </div>

@@ -41,6 +41,12 @@ function Navbar() {
     animateScroll.scrollToTop(options);
   };
 
+  // Function to close the navbar on dropdown link click
+  const closeNavbar = () => {
+    setIsOpen1(false);
+    setOpen(false);
+  };
+
   return (
     <div className={Navbar ? "navbar active" : "navbar"}>
       <div
@@ -60,7 +66,10 @@ function Navbar() {
                 activeClass="active-nav"
                 to="home"
                 spy={true}
-                onClick={handleScrollToTop}
+                onClick={() => {
+                  handleScrollToTop();
+                  closeNavbar(); // Close navbar on link click
+                }}
                 {...options}
               >
                 HOME
@@ -72,7 +81,10 @@ function Navbar() {
                 activeClass="active-nav"
                 to="about"
                 spy={true}
-                onClick={handleScrollToTop}
+                onClick={() => {
+                  handleScrollToTop();
+                  closeNavbar(); // Close navbar on link click
+                }}
                 {...options}
               >
                 ABOUT US
@@ -84,7 +96,10 @@ function Navbar() {
                 activeClass="active-nav"
                 to="upcoming-events"
                 spy={true}
-                onClick={handleScrollToTop}
+                onClick={() => {
+                  handleScrollToTop();
+                  closeNavbar(); // Close navbar on link click
+                }}
                 {...options}
               >
                 EVENTS
@@ -96,7 +111,10 @@ function Navbar() {
                 activeClass="active-nav"
                 to="testimonial"
                 spy={true}
-                onClick={handleScrollToTop}
+                onClick={() => {
+                  handleScrollToTop();
+                  closeNavbar(); // Close navbar on link click
+                }}
                 {...options}
               >
                 TESTIMONIALS
@@ -108,7 +126,10 @@ function Navbar() {
                 activeClass="active-nav"
                 to="contact-us"
                 spy={true}
-                onClick={handleScrollToTop}
+                onClick={() => {
+                  handleScrollToTop();
+                  closeNavbar(); // Close navbar on link click
+                }}
                 {...options}
               >
                 CONTACT US

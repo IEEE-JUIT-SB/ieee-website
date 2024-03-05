@@ -6,6 +6,7 @@
   align-items: center;
   padding-top: 0rem;
   height: 100vh;
+  overflow: hidden;
 }
 #tbg {
   position: absolute;
@@ -14,7 +15,7 @@
   top: -4px;
   mix-blend-mode: exclusion;
 }
-.heading {
+.testimonials-heading {
   color: #fff;
   font-size: 62px;
   text-align: center;
@@ -23,6 +24,7 @@
   text-shadow: 0 0 0.2rem #e093fd;
   animation: floatAnimation 5s ease infinite;
   z-index: 1;
+  margin-bottom: 5rem;
 }
 
 .test-content {
@@ -30,7 +32,6 @@
   width: 80%;
   align-items: center;
   justify-content: center;
-  height: 470px;
   border-radius: 16px;
   border: 1px solid #313131;
   background: rgba(21, 9, 92, 0.7);
@@ -40,6 +41,7 @@
   position: relative;
   box-shadow: 0 0 20px 5px rgba(94, 74, 206, 0.5); /* Adjust the color and blur radius */
   outline: 1px solid rgba(56, 56, 139, 0.5);
+  padding: 2rem;
 }
 .slick-dots li.slick-active button:before {
   color: #e2e3ec !important;
@@ -96,9 +98,6 @@
   }
 }
 @media (max-width: 1400px) {
-  .test-content {
-    height: 500px;
-  }
   .slick-next {
     right: 25px !important;
   }
@@ -111,9 +110,6 @@
 }
 
 @media (max-width: 1250px) {
-  .test-content {
-    height: 450px;
-  }
   .slick-next {
     right: 85px !important;
   }
@@ -128,21 +124,18 @@
   }
 }
 
-@media (max-width: 970px) {
-  .test-content {
-    display: flex;
+@media (max-width: 980px) {
+  .slick-slider{
+    padding: 0 !important;
+  }
+  .tcar-card{
     flex-direction: column;
-    height: 900px;
   }
-
-  .test-para {
-    width: 70%;
-    margin-left: 0;
+  .tcar-card img{
+    width: 30%;
   }
-
-  .test-pic {
-    left: 0;
-    margin: 20px auto;
+  .test-content div{
+    width: 100%;
   }
 }
 
@@ -160,12 +153,47 @@
   .test-content {
     height: 780px;
   }
-
+  
   .test-para {
     font-size: 20px;
   }
-
+  
   .test-pic {
     margin: 15px 5px;
+  }
+}
+
+@media (max-width: 425px) {
+  .testimonials-heading{
+    font-size: 28px;
+  }
+  .tcar-card img{
+    width: 70%;
+  }
+  .tcar-card p{
+    width: 100%;
+    font-size: 12px !important;
+  }
+  .tcar-card{
+    gap: 1rem;
+  }
+  .test-content{
+    height: auto;
+  }
+  .slick-prev, .slick-next{
+    top: 130% !important;
+  }
+  .slick-prev{
+    left: -10% !important;
+  }
+  .slick-next{
+    right: -10% !important;
+  }
+  .slick-dots{
+    top: 127%;
+    left: 10%;
+  }
+  #tbg{
+    width: 200%;
   }
 }

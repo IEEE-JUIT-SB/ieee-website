@@ -417,3 +417,54 @@
     transform: rotate(360deg) translateX(470px) rotate(-360deg);
   }
 }
+
+@media screen and (max-width: 425px) {
+  .upcoming-events-head{
+    font-size: 28px;
+  }
+  #uebg{
+    width: 200%;
+  }
+  .ue-container{
+    width: 90%;
+  }
+  .ue-card-date h5{
+    font-size: 22px !important;
+    line-height: 22px !important;
+  }
+  .ue-card-date, .ue-card-date h6{
+    font-size: 16px !important;
+  }
+  .box .content p{
+    font-size: 12px !important;
+  }
+  .box .content{
+    width: 80% !important;
+    height: auto !important;
+    padding: 0.7rem !important;
+  }
+  .box{
+    width: 80% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  .box:hover .content{
+    padding: 0.7rem !important;
+  }
+  .ue-cards{
+    gap: 1rem;
+  }
+  .ue-bottom-content{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .bottom-card{
+    width: 100%;
+  }
+  .bottom-card p:nth-child(2), .bottom-card p:nth-child(2) span, .bottom-card p:nth-child(3), .bottom-card p:nth-child(4), .bottom-card p:nth-child(3) text, .bottom-card p:nth-child(4) text{
+    font-size: 12px;
+  }
+  .ue-bottom-content a{
+    font-size: 18px;
+  }
+}
