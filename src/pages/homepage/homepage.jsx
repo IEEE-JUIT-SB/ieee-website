@@ -3,7 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Landing from "./components/landing/Landing";
 import About from "./components/About/About";
 import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvent";
-import Testimonials from "./components/testimonials/Testimonials";
+import TSlider from "./components/testimonials/TSlider";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
 
@@ -14,7 +14,7 @@ export default function Homepage() {
       <Landing />
       <About />
       <UpcomingEvents />
-      <Testimonials />
+      <TSlider />
       <ContactUs />
       <Footer />
     </div>
