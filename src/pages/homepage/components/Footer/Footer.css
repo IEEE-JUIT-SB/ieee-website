@@ -1,5 +1,5 @@
 .section_padding {
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
 }
 .footer {
   background-color: #060313;
@@ -18,7 +18,7 @@
   flex-wrap: wrap;
   width: 100%;
   text-align: left;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 .sb_footer-links_div {
   width: 150px;
@@ -82,7 +82,9 @@ hr {
   font-weight: 600;
   display: flex;
   justify-content: center;
-  margin-top: 3.5px;
+  /* margin-top: 3.5px; */
+  background-color: var(--color1);
+  padding: 0.2rem 0;
 }
 @media screen and (max-width: 850px) {
   .sb_footer-heading h1 {

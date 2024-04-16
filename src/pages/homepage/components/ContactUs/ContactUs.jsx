@@ -31,7 +31,7 @@ export default function ContactUs() {
 
     if (firstName && lastName && email && message) {
       const res = await fetch(
-        "https://ieee-website-72717-default-rtdb.firebaseio.com/userDataRecords.json",
+        "https://ieee-website-57af0-default-rtdb.firebaseio.com/userDataRecords.json",
         {
           method: "POST",
           headers: {

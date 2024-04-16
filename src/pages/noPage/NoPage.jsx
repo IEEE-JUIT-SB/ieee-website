@@ -11,9 +11,6 @@ export default function NoPage() {
       <Navbar />
       <div className="">
         <img src={Asset2} alt="" id="bg-asset nopage-bg" />
-        {/* <div className="starfield starfield-1">
-          <Starfield />
-        </div> */}
         <div id="space-warp">
           <div class="stars"></div>
           <div class="stars"></div>

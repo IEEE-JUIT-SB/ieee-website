@@ -44,12 +44,15 @@
   flex-direction: column;
   position: relative;
 }
-.ue-cards {
+.ue-cards-1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
   z-index: 2;
+}
+.ue-cards-2{
+  display: none;
 }
 
 .bottom-card {
@@ -451,8 +454,12 @@
   .box:hover .content{
     padding: 0.7rem !important;
   }
-  .ue-cards{
-    gap: 1rem;
+  .ue-cards-1{
+    /* gap: 1rem; */
+    display: none;
+  }
+  .ue-cards-2{
+    display: block;
   }
   .ue-bottom-content{
     flex-direction: column;

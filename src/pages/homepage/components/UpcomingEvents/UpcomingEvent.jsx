@@ -4,6 +4,7 @@ import "./UpcomingEvent.css";
 import UEBox from "./UEBox";
 import { Link } from "react-router-dom";
 import UEBG from "./Assets/ue-bg.png";
+import UESlider from "./UESlider";
 
 function SpanTagsGenerator() {
   // Generate an array from 10 to 60
@@ -82,7 +83,7 @@ export default function UpcomingEvents() {
       <h4 className="upcoming-events-head">UPCOMING EVENTS</h4>
       <img src={UEBG} alt="" id="uebg" />
       <div className="ue-container">
-        <div className="ue-cards">
+        <div className="ue-cards-1">
           <UEBox
             date="08"
             month="March"
@@ -104,6 +105,9 @@ export default function UpcomingEvents() {
             name="Mindscape"
             about="R&D Expo is one of the biggest tech fest and flagship event of IEEE JUIT SB."
           />
+        </div>
+        <div className="ue-cards-2">
+          <UESlider/>
         </div>
         <div className="ue-bottom-content">
           <div className="bottom-card">

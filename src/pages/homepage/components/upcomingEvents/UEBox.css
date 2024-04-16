@@ -189,3 +189,14 @@
   align-items: flex-end;
   gap: 10px;
 }
+
+.ue-card-2 .slick-slider .slick-initialized .slick-prev{
+  left: 2% !important;
+}
+
+@media screen and (max-width: 425px) {
+  .box .content {
+    left: -30%;
+    width: 300px !important;
+  }
+}
