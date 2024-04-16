@@ -1,6 +1,6 @@
 import React from "react";
 import "./NoPage.css";
-import Footer from "../homepage/components/footer/Footer";
+import Footer from "../homepage/components/Footer/Footer";
 import Asset2 from "../homepage/components/landing/Assets/asset2.png";
 import Navbar from "../homepage/components/navbar/Navbar";
 import Starfield from "../homepage/components/landing/Starfield";
