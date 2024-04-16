@@ -23,7 +23,7 @@ function TSlider() {
       <Slider {...settings}>
         <TCard
           image={Person1}
-          name="Ishita"
+          name="Ishita1"
           testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
         dolorum praesentium natus nisi eveniet corporis ex. Similique
         doloribus harum ullam. Odit numquam ea non tempore earum nisi quaerat
@@ -31,7 +31,7 @@ function TSlider() {
         />
         <TCard
           image={Person1}
-          name="Ishita"
+          name="Ishita2"
           testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
         dolorum praesentium natus nisi eveniet corporis ex. Similique
         doloribus harum ullam. Odit numquam ea non tempore earum nisi quaerat
@@ -39,7 +39,7 @@ function TSlider() {
         />
         <TCard
           image={Person1}
-          name="Ishita"
+          name="Ishita3"
           testimonial="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
         dolorum praesentium natus nisi eveniet corporis ex. Similique
         doloribus harum ullam. Odit numquam ea non tempore earum nisi quaerat
