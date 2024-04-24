@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import UEBox from "./UEBox";
-import "./UEBox.css"
+import "./UEBox.css";
 
 function UESlider() {
   const settings = {
@@ -21,12 +21,14 @@ function UESlider() {
     <div>
       <Slider {...settings}>
         <UEBox
-          date="08"
-          month="March"
-          year="2023"
+          date="03"
+          month="May"
+          year="2024"
           name="R&D Expo"
           about="R&D Expo is one of the biggest tech fest and flagship event of IEEE JUIT SB."
+          link={`https://rndexpo.ieeejuit.co.in`}
         />
+
         <UEBox
           date="06"
           month="April"
