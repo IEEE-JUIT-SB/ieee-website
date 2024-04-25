@@ -67,22 +67,34 @@
   display: flex !important;
   flex-direction: row;
   align-items: center;
+  gap: 2rem;
 }
 .tcar-card img {
-  width: 70%;
+  width: 32%;
   border-radius: 25px;
 }
 .tcar-card div {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .tcar-card div h3 {
   font-size: 24px;
 }
 .tcar-card p {
-  width: 70%;
-  font-size: 20px !important;
+  width: 100%;
+  font-size: 18px !important;
+  text-align: justify;
+}
+.tcar-socials{
+  display: flex;
+  flex-direction: row !important;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.tcar-socials a{
+  color: white;
+  font-size: 1.3rem;
+  z-index: 2;
 }
 .t-assets {
   border-radius: 100%;

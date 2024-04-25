@@ -1,15 +1,27 @@
 import React from "react";
-import "./Testimonials.css"
+import "./Testimonials.css";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
-export default function TCard(parse) {
+export default function TCard({ testimonial }) {
   return (
-    <div>
-      <div className="tcar-card">
+    <div className="tcar-card">
+      <img src={testimonial.image} alt={testimonial.name} />
+      <div className="tcar-test">
+        <p>"{testimonial.testimonial}"</p>
         <div>
-          <img src={parse.image} alt="" />
-          <h3>{parse.name}</h3>
+          <div>
+            <div className="tcar-socials">
+            <h3>- {testimonial.name}</h3>
+              <a href={testimonial.insta}>
+                <FaInstagram />
+              </a>
+              <a href={testimonial.linkedin}>
+                <FaLinkedin />
+              </a>
+            </div>
+            <p>{testimonial.role}</p>
+          </div>
         </div>
-        <p>"{parse.testimonial}"</p>
       </div>
     </div>
   );
