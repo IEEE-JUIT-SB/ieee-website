@@ -191,6 +191,14 @@
   }
   .test-content{
     height: auto;
+    padding: 1rem;
+  }
+  .tcar-card div h3{
+    font-size: 16px;
+    margin-top: 1rem;
+  }
+  .tcar-socials a{
+    font-size: 1rem;
   }
   .slick-prev, .slick-next{
     top: 130% !important;

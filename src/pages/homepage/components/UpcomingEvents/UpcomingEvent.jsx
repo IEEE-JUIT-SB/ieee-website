@@ -113,16 +113,19 @@ export default function UpcomingEvents() {
           <div className="bottom-card">
             <h4>Latest Upcoming Event Details</h4>
             <p>
+              Event Name: R&D Expo
+            </p>
+            <p>
               Purpose of the Event :{" "}
               <span>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatibus accusamus adipisci, ad deserunt earum aliquid unde
-                doloremque quas laborum labore temporibus aliquam aspernatur
-                consequatur, ipsa, cupiditate quo sed eum nam!
+              IEEE-JUIT-SB is organizing its flagship event R&D expo, a 3-day event including a plethora of events that empower students to apply their engineering skills to themes of high relevance and global impact. The main attraction of this event would be a 16 Hour Hackathon.
               </span>
             </p>
             <p>
-              Event Venue: <text>LT1</text>
+              Event Venue: <text>LT2</text>
+            </p>
+            <p>
+              Event Dates: <text>3<sup>rd</sup> May to 5<sup>th</sup> May, 2024</text>
             </p>
             <p>
               Event Timings: <text>05:00PM - 07:30PM</text>

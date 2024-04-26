@@ -165,7 +165,9 @@
 .box .content p {
   transition: 0.5s;
 }
-
+.box .content a{
+  color: white;
+}
 .box:hover .content {
   left: -25px;
   padding: 25px 25px;
