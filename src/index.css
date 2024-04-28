@@ -41,3 +41,12 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: #1b37b6; /* Color of the thumb on hover */
 }
+
+/* Import Tailwind's base styles */
+@import 'tailwindcss/base';
+
+/* Import Tailwind's component styles */
+@import 'tailwindcss/components';
+
+/* Import Tailwind's utility styles */
+@import 'tailwindcss/utilities';

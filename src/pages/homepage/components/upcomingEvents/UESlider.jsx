@@ -21,7 +21,7 @@ function UESlider() {
     <div>
       <Slider {...settings}>
         <UEBox
-          date="03"
+          date="04"
           month="May"
           year="2024"
           name="R&D Expo"

@@ -1,7 +1,7 @@
 .box {
   position: relative;
   width: 270px;
-  height: 320px;
+  height: auto;
   display: flex;
   justify-content: center;
   margin: 15px 37px;
@@ -141,6 +141,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  height: 250px;
 }
 
 .box:hover .content {
@@ -169,8 +170,8 @@
   color: white;
 }
 .box:hover .content {
-  left: -25px;
-  padding: 25px 25px;
+  left: 0;
+  padding: 10px 20px;
   opacity: 1; /* Make the content visible */
 }
 

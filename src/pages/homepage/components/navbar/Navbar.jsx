@@ -122,6 +122,11 @@ function Navbar() {
             </li>
 
             <li>
+              <Link to="/membership" onClick={handleScrollToTop}>
+                MEMBERSHIP
+              </Link>
+            </li>
+            <li>
               <ScrollLink
                 activeClass="active-nav"
                 to="contact-us"
@@ -134,6 +139,13 @@ function Navbar() {
               >
                 CONTACT US
               </ScrollLink>
+            </li>
+            <li>
+              <Link to="/team"
+                onClick={handleScrollToTop}
+              >
+                TEAM
+              </Link>
             </li>
           </ul>
         </div>

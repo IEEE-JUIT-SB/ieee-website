@@ -2,7 +2,7 @@ import React from "react";
 import "./UEBox.css";
 import { Link } from "react-router-dom";
 
-export default function UEBox(parse,link) {
+export default function UEBox(parse) {
   // Ensure correct prop destructuring and type safety (optional)
   return (
     <div>
@@ -17,7 +17,7 @@ export default function UEBox(parse,link) {
           <p>{parse.about}</p>
           <a
             className="links"
-            href={link}
+            href={parse.link}
             target="_blank"
           >
             Learn More >

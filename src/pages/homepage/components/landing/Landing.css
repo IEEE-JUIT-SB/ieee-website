@@ -34,6 +34,9 @@
   top: 10%;
   z-index: 5;
 }
+.landing-section1 img{
+  z-index: 5;
+}
 .particle{
   width: 100% !important;
   overflow: hidden !important;

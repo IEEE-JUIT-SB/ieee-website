@@ -25,6 +25,15 @@
   position: absolute;
   top: 6rem;
   left: 0;
+  color: white;
+}
+.starfield-nopage{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  top: 6%;
+  left: 0;
 }
 .no-page-in-1 h1 {
   padding-bottom: 50vh;
@@ -72,8 +81,24 @@
 
 .nopage-bg{
   width: 100%;
-  z-index: 5 !important;
   position: relative;
   display: block;
   margin: 0 !important;
+}
+
+@media screen and (max-width: 425px) {
+  .starfield-nopage{
+    top: -10rem;
+  }
+  .no-page-in-1 h1{
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-bottom: 15rem;
+  }
+  .no-page-in-1 h2{
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+    padding-top: 0;
+  }
 }
