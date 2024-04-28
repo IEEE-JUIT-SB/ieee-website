@@ -4,13 +4,14 @@ import Home from "./pages/homepage/homepage";
 import NoPage from "./pages/noPage/NoPage";
 import Membership from "./pages/membership/Membership";
 import Team from "./pages/team/Team";
+import PastCouncil from "./pages/team/PastCouncil";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        {/* <Route path="blogs" element={<About />} /> */}
+        <Route path="past-council-22" element={<PastCouncil />} />
         {/* <Route path="contact" element={<Contact />} /> */}
         <Route path="*" element={<NoPage />} />
         <Route path="membership" element={<Membership />} />

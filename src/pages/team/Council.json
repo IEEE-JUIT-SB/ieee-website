@@ -1,0 +1,58 @@
+[
+  {
+    "image": "Aryam",
+    "name": "Aryam",
+    "position": "Chairperson",
+    "ln": "https://www.linkedin.com/in/aryamsharma/",
+    "in": "https://www.instagram.com/_aryamsharma_/",
+    "mail": "#"
+  },
+  {
+    "image": "Mayank",
+    "name": "Mayank Kumar",
+    "position": "Vice Chairperson",
+    "ln": "https://www.linkedin.com/in/racinmk/",
+    "in": "https://www.instagram.com/racinmk/",
+    "mail": "#"
+  },
+  {
+    "image": "Aavishkar",
+    "name": "Aavishkar",
+    "position": "Treasurer",
+    "ln": "https://www.linkedin.com/in/aavishkar-732760247/",
+    "in": "#",
+    "mail": "#"
+  },
+  {
+    "image": "Kshitiz",
+    "name": "Kshitiz Tayal",
+    "position": "Technical, Programming & Designing Head",
+    "ln": "https://www.linkedin.com/in/kshitiz-tayal-a06b90224/",
+    "in": "https://www.instagram.com/_kshitizz.__/",
+    "mail": "#"
+  },
+  {
+    "image": "Ishita",
+    "name": "Ishita Mishra",
+    "position": "Secretary",
+    "ln": "https://www.linkedin.com/in/ishita-mishra-6744b2233/",
+    "in": "https://www.instagram.com/_ishu_1129_/",
+    "mail": "#"
+  },
+  {
+    "image": "Saksham",
+    "name": "Saksham Salathia",
+    "position": "Public Relations Head",
+    "ln": "https://www.linkedin.com/in/saksham-slathia/",
+    "in": "https://www.linkedin.com/in/saksham-slathia/",
+    "mail": "#"
+  },
+  {
+    "image": "Vivek",
+    "name": "Vivek Kumar Kataria",
+    "position": "Media & Publicity Head",
+    "ln": "https://www.linkedin.com/in/vivek-kumar-kataria-3b69451a9/",
+    "in": "https://www.instagram.com/_vivek.kataria/",
+    "mail": "#"
+  }
+]

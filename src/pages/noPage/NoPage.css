@@ -36,11 +36,13 @@
   left: 0;
 }
 .no-page-in-1 h1 {
+  font-size: 3rem;
   padding-bottom: 50vh;
   margin-top: 10vh;
 }
 .no-page-in-1 h2 {
-  padding-top: 10vh;
+  padding-top: 0;
+  font-size: 34px;
 }
 #asset-1 {
   left: 20%;

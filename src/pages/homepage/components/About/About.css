@@ -233,7 +233,7 @@
 }
 
 .about-us__heading {
-  padding-top: 6rem;
+  padding-top: 3rem;
   font-size: 62px;
   margin-inline: 20px;
   font-family: var(--font2);
@@ -268,10 +268,11 @@
 }
 
 .about-us__stats > * {
-  padding-block: 30px;
-  padding-inline: 40px;
+  padding-block: 10px;
+  padding-inline: 10px;
   margin-block: 20px;
   margin-right: 40px;
+  text-align: center;
 
   background-color: rgba(59, 40, 174, 0.2);
   border-radius: 5px;
@@ -310,7 +311,7 @@
 }
 .about-us__para_wrapper{
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 .buttonNext___2mOCa{
   position: absolute;
@@ -333,6 +334,7 @@
 .about-us__paragraphs {
   display: flex;
   width: 82%;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   text-align: justify;
