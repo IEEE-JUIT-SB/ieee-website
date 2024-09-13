@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../homepage/components/navbar/Navbar";
-import Footer from "../homepage/components/footer/Footer";
+import Footer from "../homepage/components/Footer/Footer";
 import TeamCard from "./TeamCard";
 import ShrutiJain from "./Assets/Faculty/ShrutiJain.jpg";
 import SunilKhah from "./Assets/Faculty/SunilKhah.jpeg";
