@@ -1,6 +1,6 @@
 import React from "react";
 import "./Landing.css";
-import IEEE from "./Assets/ieee.png";
+import IEEE from "./Assets/IEEE.png";
 import "./LandingBG.css";
 import Starfield from "./Starfield";
 import Asset2 from "./Assets/asset2.png";
