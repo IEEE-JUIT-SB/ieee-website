@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 
 import "./About.css";
+import AboutCarousel from "./AboutCarousel";
 import Asset1 from "./Assets/asset1.svg";
 import Asset2 from "./Assets/asset2.svg";
 import Asset3 from "./Assets/asset3.svg";
@@ -13,7 +14,6 @@ import Asset9 from "./Assets/asset9.svg";
 import Asset10 from "./Assets/asset10.svg";
 import Asset11 from "./Assets/asset11.svg";
 import AboutBG from "./Assets/bg.png";
-import AboutCarousel from "./AboutCarousel";
 
 export default function About() {
   const [isMouseInside, setIsMouseInside] = useState(false);
