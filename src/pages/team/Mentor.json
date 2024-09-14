@@ -1,18 +1,27 @@
 [
   {
-    "image": "Arpit",
-    "name": "Arpit Kaushal",
+    "image": "Aryam Sharma",
+    "name": "Aryam Sharma",
     "position": "Mentor",
-    "ln": "https://www.linkedin.com/in/arpit-kaushal-133a911bb/",
-    "in": "https://www.instagram.com/general.broda/",
+    "ln": "https://www.linkedin.com/in/aryamsharma/",
+    "in": "https://www.instagram.com/_aryamsharma_/",
+    "mail": "sarthi.aryam.sharma@gmail.com"
+  },
+  {
+    "image": "Kshitiz Tayal",
+    "name": "Kshitiz Tayal",
+    "position": "Mentor",
+    "ln": "https://www.linkedin.com/in/kshitiz-tayal-a06b90224/",
+    "in": "https://www.instagram.com/_kshitizz.__/",
     "mail": "#"
   },
   {
-    "image": "Vipul",
-    "name": "Vipul Arora",
+    "image": "Mayank",
+    "name": "Mayank Kumar",
     "position": "Mentor",
-    "ln": "https://www.linkedin.com/in/ar0ravipul/",
-    "in": "https://www.instagram.com/ar0ravipul/",
+    "ln": "https://www.linkedin.com/in/racinmk/",
+    "in": "https://www.instagram.com/racinmk/",
     "mail": "#"
   }
+
 ]
