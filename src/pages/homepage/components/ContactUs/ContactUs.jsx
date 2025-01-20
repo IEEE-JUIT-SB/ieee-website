@@ -109,14 +109,14 @@ export default function ContactUs() {
               </a>
             </div>
             <div className="linkedin">
-              <a href="https://www.linkedin.com/in/ieeejuitsb/" target="_blank">
+              <a href="//www.linkedin.com/company/ieeejuit/mycompany/" target="_blank">
                 <FaLinkedin className="linkedin-icon" />
                 {/* <p>linkedin.com/ieeejuit</p> */}
                 <RandomReveal
                   isPlaying
                   duration={4}
                   revealDuration={1.6}
-                  characters="linkedin.com/ieeejuit"
+                  characters="IEEE JUIT Student Branch"
                   onComplete={() => ({ shouldRepeat: false, delay: 2.5 })}
                 />
               </a>

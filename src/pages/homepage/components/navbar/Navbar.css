@@ -26,6 +26,7 @@
   align-items: center;
 }
 .navbar-logo {
+  margin-top: 1rem;
   display: flex;
   position: absolute;
   align-items: center;

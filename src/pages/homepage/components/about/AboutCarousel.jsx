@@ -1,4 +1,3 @@
-import React from "react";
 import {
   CarouselProvider,
   Slider,
@@ -6,6 +5,7 @@ import {
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
+import React from "react";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import ButBack from "./Assets/arr_back.svg"
 import ButNext from "./Assets/arr_fwd.svg"

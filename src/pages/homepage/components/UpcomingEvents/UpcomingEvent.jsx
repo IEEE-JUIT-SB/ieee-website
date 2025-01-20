@@ -85,28 +85,20 @@ export default function UpcomingEvents() {
       <div className="ue-container">
         <div className="ue-cards-1">
           <UEBox
-            date="03"
-            month="May"
-            year="2024"
-            name="R&D Expo"
-            about="R&D Expo is one of the biggest tech fest and flagship event of IEEE JUIT SB."
-            link="//rndexpo.ieeejuit.co.in"
-            />
-          <UEBox
-            date="01"
+            date="06"
             month="December"
             year="2024"
             name="Enigma"
             about="Enigma is a tech fest of IEEE JUIT SB of three days having various technical competitions."
-            link="//enigma.ieeejuit.co.in/"
+            link="/"
             />
           <UEBox
-            date="20"
-            month="August"
-            year="2024"
-            name="Smart Living"
-            about="A three days workshop on harnessing Sensor Fusion for Home Automation."
-            link="rndexpo.ieeejuit.co.in"
+            date=""
+            month="January"
+            year="2025"
+            name="Web Development Workshop"
+            about="A three days workshop on web development."
+            link="/"
             />
         </div>
         <div className="ue-cards-2">
@@ -116,22 +108,22 @@ export default function UpcomingEvents() {
           <div className="bottom-card">
             <h4>Latest Upcoming Event Details</h4>
             <p>
-              Event Name: R&D Expo
+              Event Name: Enigma
             </p>
             <p>
               Purpose of the Event :{" "}
               <span>
-              IEEE-JUIT-SB is organizing its flagship event R&D expo, a 3-day event including a plethora of events that empower students to apply their engineering skills to themes of high relevance and global impact. The main attraction of this event would be a 18 Hour Hackathon.
+              IEEE-JUIT-SB is organizing its mini-flagship event Enigma, a 3-day event including a plethora of events that empower students to apply their engineering skills to themes of high relevance and global impact. The main attraction of this event would be a tech infused real-life murder mystery challenge.
               </span>
             </p>
             <p>
-              Event Venue: <text>LT2</text>
+              Event Venue: <text>LT3</text>
             </p>
             <p>
-              Event Dates: <text>3<sup>rd</sup> May to 5<sup>th</sup> May, 2024</text>
+              Event Dates: <text>6<sup>th</sup> December to 8<sup>th</sup> December, 2024</text>
             </p>
             <p>
-              Event Timings: <text>05:00PM - 07:30PM</text>
+              Event Timings: <text>03:00PM - 07:30PM</text>
             </p>
           </div>
           <Link to="/past-events">Past Events ➡</Link>

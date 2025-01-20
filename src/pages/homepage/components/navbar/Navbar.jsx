@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import IEEE from "./Assets/IEEE-JUIT(white).png";
+import IEEE from "./Assets/IEEE.png";
 import { Cross as Hamburger } from "hamburger-react";
 import { animateScroll } from "react-scroll";
 import { Link as ScrollLink } from "react-scroll";
@@ -124,6 +124,11 @@ function Navbar() {
             <li>
               <Link to="/membership" onClick={handleScrollToTop}>
                 MEMBERSHIP
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" onClick={handleScrollToTop}>
+                GALLERY
               </Link>
             </li>
             <li>
