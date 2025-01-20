@@ -30,30 +30,30 @@ import Faculty from "./Faculty.json";
 import Mentor from "./Mentor.json";
 import Council from "./Council.json";
 import { Link } from "react-router-dom";
-// import Design from "./TeamLeads/DesignTeamLeads.json"
-// import Saanch from "./Assets/TeamLeads/Designing/saanch.jpg"
-// import Harsh from "./Assets/TeamLeads/Designing/harsh.jpeg"
-// import Nazma from "./Assets/TeamLeads/Designing/nazma.jpg"
-// import Programming from "./TeamLeads/ProgrammingTeamLeads.json"
-// import Divyansh from "./Assets/TeamLeads/Programming/divyansh.jpg"
-// import Viren from "./Assets/TeamLeads/Programming/viren.jpg"
-// import PR from "./TeamLeads/PRFintechTeamLeads.json"
-// import Satvik from "./Assets/TeamLeads/PRFintech/satvik.jpeg"
-// import Anand from "./Assets/TeamLeads/PRFintech/anand.jpg"
+import Design from "./TeamLeads/DesignTeamLeads.json"
+import Kritika from "./Assets/TeamLeads/Designing/kritika.jpg"
+import Tania from "./Assets/TeamLeads/Designing/tania.jpg"
+import Edann from "./Assets/TeamLeads/Designing/edann.jpg"
+import Programming from "./TeamLeads/ProgrammingTeamLeads.json"
+import Shruti from "./Assets/TeamLeads/Programming/shruti.jpg"
+import Astha from "./Assets/TeamLeads/Programming/astha.jpeg"
+import PR from "./TeamLeads/PRFintechTeamLeads.json"
+import Devank from "./Assets/TeamLeads/PRFintech/devank.JPG"
+import Anwesh from "./Assets/TeamLeads/PRFintech/anwesh.jpg"
 // import Tarun from "./Assets/TeamLeads/PRFintech/tarun.jpg"
 // import Operations from "./TeamLeads/OperationsTeamLeads.json"
 // import Rajat from "./Assets/TeamLeads/Operations/rajat.jpg"
 // import Zorawar from "./Assets/TeamLeads/Operations/zorawar.jpg"
 // import Prerna from "./Assets/TeamLeads/Operations/prerna.jpg"
-// import Social from "./TeamLeads/SocialMediaTeamLeads.json"
-// import Mohit from "./Assets/TeamLeads/SocialMedia/mohit.jpg"
+import Social from "./TeamLeads/SocialMediaTeamLeads.json"
+import Prakhar from "./Assets/TeamLeads/SocialMedia/prakhar.jpg"
 // import Pranav from "./Assets/TeamLeads/SocialMedia/pranav.jpg"
 // import IOT from "./TeamLeads/IOTTeamLeads.json"
 // import Preetimay from "./Assets/TeamLeads/IOT/preetimay.jpg"
 // import Anant from "./Assets/TeamLeads/IOT/anant.jpg"
-// import Web from "./TeamLeads/WebTeamLeads.json"
-// import Samson from "./Assets/TeamLeads/Web/samson.jpg"
-// import Varnan from "./Assets/TeamLeads/Web/varnan.jpg"
+import Web from "./TeamLeads/WebTeamLeads.json"
+import Namann from "./Assets/TeamLeads/Web/namann.jpg"
+import Jayendra from "./Assets/TeamLeads/Web/jayendra.jpg"
 // import Cyber from "./TeamLeads/CyberSecurityTeamLeads.json"
 // import Vanshika from "./Assets/TeamLeads/Cyber/vanshika.jpeg"
 // import Khushi from "./Assets/TeamLeads/IOT/khushi.jpg"
@@ -62,14 +62,14 @@ export default function Team() {
   const faculty = [ShrutiJain, SunilKhah, HemantSood, Nancy, Anita, NeenaJindal, VikasBaghel, Mandeep, Abhishek];
   const mentor = [Aryam, Kshitiz, Mayank];
   const council = [Harsh, Samson, Nazma, Satvik, Divyansh, Anant, Pranav, Preetimay, Prerna, Saanch, Soumya];
-  const design=[]
-  const programming=[]
-  const pr=[]
-  const operations=[]
-  const social=[]
-  const iot=[]
-  const web=[]
-  const cyber=[]
+  const design = [Kritika, Tania, Edann];
+  const programming = [Shruti, Astha];
+  const pr = [Devank, Anwesh];
+  const operations = []
+  const social = [Prakhar];
+  const iot = []
+  const web = [Namann, Jayendra];
+  const cyber = []
 
   return (
     <div>
@@ -128,7 +128,7 @@ export default function Team() {
             ))}
           </div>
         </div>
-        {/* <div className="team-page-section">
+        { <div className="team-page-section">
           <h2>IEEE JUIT SB TEAM LEADS</h2>
           <h3 className="text-white text-[28px]">Design Team Leads</h3>
           <div className="team-page-cards">
@@ -145,7 +145,7 @@ export default function Team() {
             ))}
           </div>
         </div>
-        <div className="team-page-section">
+       /* <div className="team-page-section">
           <h3 className="text-white text-[28px]">Programming Team Leads</h3>
           <div className="team-page-cards">
             {Programming.map((member, index) => (
@@ -161,8 +161,8 @@ export default function Team() {
             ))}
           </div>
         </div>
-        <div className="team-page-section">
-          <h3 className="text-white text-[28px]">PR & Fintech Team Leads</h3>
+      <div className="team-page-section">
+          <h3 className="text-white text-[28px]">PR Team Leads</h3>
           <div className="team-page-cards">
             {PR.map((member, index) => (
               <TeamCard
@@ -178,23 +178,7 @@ export default function Team() {
           </div>
         </div>
         <div className="team-page-section">
-          <h3 className="text-white text-[28px]">Operations Team Leads</h3>
-          <div className="team-page-cards">
-            {Operations.map((member, index) => (
-              <TeamCard
-                key={index}
-                image={operations[index]}
-                name={member.name}
-                position={member.position}
-                ln={member.ln}
-                in={member.in}
-                mail={member.mail}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="team-page-section">
-          <h3 className="text-white text-[28px]">Social Media Team Leads</h3>
+        <h3 className="text-white text-[28px]">Social Media Team Leads</h3>
           <div className="team-page-cards">
             {Social.map((member, index) => (
               <TeamCard
@@ -207,40 +191,56 @@ export default function Team() {
                 mail={member.mail}
               />
             ))}
-          </div>
-        </div>
-        <div className="team-page-section">
-          <h3 className="text-white text-[28px]">IOT Team Leads</h3>
-          <div className="team-page-cards">
-            {IOT.map((member, index) => (
-              <TeamCard
-                key={index}
-                image={iot[index]}
-                name={member.name}
-                position={member.position}
-                ln={member.ln}
-                in={member.in}
-                mail={member.mail}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="team-page-section">
-          <h3 className="text-white text-[28px]">Web Team Leads</h3>
+            </div>
+            </div>
+          <div className="team-page-section">
+            <h3 className="text-white text-[28px]">Web Team Leads</h3>
           <div className="team-page-cards">
             {Web.map((member, index) => (
               <TeamCard
-                key={index}
-                image={web[index]}
-                name={member.name}
-                position={member.position}
-                ln={member.ln}
-                in={member.in}
-                mail={member.mail}
+              key={index}
+              image={web[index]}
+              name={member.name}
+              position={member.position}
+              ln={member.ln}
+              in={member.in}
+              mail={member.mail}
               />
             ))}
-          </div>
-        </div>
+            </div>
+            </div>
+            /*  <div className="team-page-section">
+                <h3 className="text-white text-[28px]">Operations Team Leads</h3>
+                <div className="team-page-cards">
+                  {Operations.map((member, index) => (
+                    <TeamCard
+                      key={index}
+                      image={operations[index]}
+                      name={member.name}
+                      position={member.position}
+                      ln={member.ln}
+                      in={member.in}
+                      mail={member.mail}
+                    />
+                  ))}
+                </div>
+              </div> 
+            <div className="team-page-section">
+               <h3 className="text-white text-[28px]">IOT Team Leads</h3>
+               <div className="team-page-cards">
+                 {IOT.map((member, index) => (
+                   <TeamCard
+                     key={index}
+                     image={iot[index]}
+                     name={member.name}
+                     position={member.position}
+                     ln={member.ln}
+                     in={member.in}
+                     mail={member.mail}
+                   />
+                 ))}
+               </div>
+             </div> 
         <div className="team-page-section">
           <h3 className="text-white text-[28px]">Cyber Security Team Leads</h3>
           <div className="team-page-cards">
