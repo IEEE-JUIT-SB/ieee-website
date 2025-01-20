@@ -4,60 +4,72 @@ import Footer from "../homepage/components/Footer/Footer";
 import TeamCard from "./TeamCard";
 import ShrutiJain from "./Assets/Faculty/ShrutiJain.jpg";
 import SunilKhah from "./Assets/Faculty/SunilKhah.jpeg";
-import Arpit from "./Assets/Mentor/Arpit.jpg";
-import Vipul from "./Assets/Mentor/Vipul.jpg";
-import Aryam from "./Assets/Coordinator/aryam.jpg";
-import Mayank from "./Assets/Coordinator/mayank.jpg";
-import Aavishkar from "./Assets/Coordinator/aavishkar.jpeg";
-import Kshitiz from "./Assets/Coordinator/kshitiz.jpg";
-import Ishita from "./Assets/Coordinator/ishita.jpg";
-import Vivek from "./Assets/Coordinator/vivek.jpg";
-import Saksham from "./Assets/Coordinator/saksham.jpg";
+import Abhishek from "./Assets/Faculty/Abhishek.jpg";
+import Anita from "./Assets/Faculty/Anita.jpg";
+import HemantSood from "./Assets/Faculty/HemantSood.jpg";
+import Mandeep from "./Assets/Faculty/Mandeep.jpg";
+import Nancy from "./Assets/Faculty/Nancy.jpg";
+import NeenaJindal from "./Assets/Faculty/NeenaJindal.jpg";
+import VikasBaghel from "./Assets/Faculty/VikasBaghel.jpg";
+import Aryam from "./Assets/Mentor/aryam.jpg";
+import Kshitiz from "./Assets/Mentor/kshitiz.jpeg";
+import Mayank from "./Assets/Mentor/mayank.jpg";
+import Harsh from "./Assets/Coordinator/harsh.JPG";
+import Samson from "./Assets/Coordinator/samson.JPG";
+import Satvik from "./Assets/Coordinator/satvik.JPG";
+import Divyansh from "./Assets/Coordinator/divyansh.JPG";
+import Nazma from "./Assets/Coordinator/nazma.JPG";
+import Anant from "./Assets/Coordinator/anant.JPG";
+import Pranav from "./Assets/Coordinator/pranav.jpeg";
+import Preetimay from "./Assets/Coordinator/preetimay.JPG";
+import Prerna from "./Assets/Coordinator/prerna.JPG";
+import Saanch from "./Assets/Coordinator/saanch.JPG";
+import Soumya from "./Assets/Coordinator/soumya.jpg";
 import "./Team.css";
 import Faculty from "./Faculty.json";
 import Mentor from "./Mentor.json";
 import Council from "./Council.json";
 import { Link } from "react-router-dom";
-import Design from "./TeamLeads/DesignTeamLeads.json"
-import Saanch from "./Assets/TeamLeads/Designing/saanch.jpg"
-import Harsh from "./Assets/TeamLeads/Designing/harsh.jpeg"
-import Nazma from "./Assets/TeamLeads/Designing/nazma.jpg"
-import Programming from "./TeamLeads/ProgrammingTeamLeads.json"
-import Divyansh from "./Assets/TeamLeads/Programming/divyansh.jpg"
-import Viren from "./Assets/TeamLeads/Programming/viren.jpg"
-import PR from "./TeamLeads/PRFintechTeamLeads.json"
-import Satvik from "./Assets/TeamLeads/PRFintech/satvik.jpeg"
-import Anand from "./Assets/TeamLeads/PRFintech/anand.jpg"
-import Tarun from "./Assets/TeamLeads/PRFintech/tarun.jpg"
-import Operations from "./TeamLeads/OperationsTeamLeads.json"
-import Rajat from "./Assets/TeamLeads/Operations/rajat.jpg"
-import Zorawar from "./Assets/TeamLeads/Operations/zorawar.jpg"
-import Prerna from "./Assets/TeamLeads/Operations/prerna.jpg"
-import Social from "./TeamLeads/SocialMediaTeamLeads.json"
-import Mohit from "./Assets/TeamLeads/SocialMedia/mohit.jpg"
-import Pranav from "./Assets/TeamLeads/SocialMedia/pranav.jpg"
-import IOT from "./TeamLeads/IOTTeamLeads.json"
-import Preetimay from "./Assets/TeamLeads/IOT/preetimay.jpg"
-import Anant from "./Assets/TeamLeads/IOT/anant.jpg"
-import Web from "./TeamLeads/WebTeamLeads.json"
-import Samson from "./Assets/TeamLeads/Web/samson.jpg"
-import Varnan from "./Assets/TeamLeads/Web/varnan.jpg"
-import Cyber from "./TeamLeads/CyberSecurityTeamLeads.json"
-import Vanshika from "./Assets/TeamLeads/Cyber/vanshika.jpeg"
-import Khushi from "./Assets/TeamLeads/IOT/khushi.jpg"
+// import Design from "./TeamLeads/DesignTeamLeads.json"
+// import Saanch from "./Assets/TeamLeads/Designing/saanch.jpg"
+// import Harsh from "./Assets/TeamLeads/Designing/harsh.jpeg"
+// import Nazma from "./Assets/TeamLeads/Designing/nazma.jpg"
+// import Programming from "./TeamLeads/ProgrammingTeamLeads.json"
+// import Divyansh from "./Assets/TeamLeads/Programming/divyansh.jpg"
+// import Viren from "./Assets/TeamLeads/Programming/viren.jpg"
+// import PR from "./TeamLeads/PRFintechTeamLeads.json"
+// import Satvik from "./Assets/TeamLeads/PRFintech/satvik.jpeg"
+// import Anand from "./Assets/TeamLeads/PRFintech/anand.jpg"
+// import Tarun from "./Assets/TeamLeads/PRFintech/tarun.jpg"
+// import Operations from "./TeamLeads/OperationsTeamLeads.json"
+// import Rajat from "./Assets/TeamLeads/Operations/rajat.jpg"
+// import Zorawar from "./Assets/TeamLeads/Operations/zorawar.jpg"
+// import Prerna from "./Assets/TeamLeads/Operations/prerna.jpg"
+// import Social from "./TeamLeads/SocialMediaTeamLeads.json"
+// import Mohit from "./Assets/TeamLeads/SocialMedia/mohit.jpg"
+// import Pranav from "./Assets/TeamLeads/SocialMedia/pranav.jpg"
+// import IOT from "./TeamLeads/IOTTeamLeads.json"
+// import Preetimay from "./Assets/TeamLeads/IOT/preetimay.jpg"
+// import Anant from "./Assets/TeamLeads/IOT/anant.jpg"
+// import Web from "./TeamLeads/WebTeamLeads.json"
+// import Samson from "./Assets/TeamLeads/Web/samson.jpg"
+// import Varnan from "./Assets/TeamLeads/Web/varnan.jpg"
+// import Cyber from "./TeamLeads/CyberSecurityTeamLeads.json"
+// import Vanshika from "./Assets/TeamLeads/Cyber/vanshika.jpeg"
+// import Khushi from "./Assets/TeamLeads/IOT/khushi.jpg"
 
 export default function Team() {
-  const faculty = [ShrutiJain, SunilKhah];
-  const mentor = [Arpit, Vipul];
-  const council = [Aryam, Mayank, Aavishkar, Kshitiz, Ishita, Saksham, Vivek];
-  const design=[Saanch,Harsh,Nazma]
-  const programming=[Divyansh,Viren]
-  const pr=[Satvik,Anand,Tarun]
-  const operations=[Rajat,Zorawar,Prerna]
-  const social=[Mohit,Pranav]
-  const iot=[Preetimay,Anant,Khushi]
-  const web=[Samson,Varnan]
-  const cyber=[Vanshika]
+  const faculty = [ShrutiJain, SunilKhah, HemantSood, Nancy, Anita, NeenaJindal, VikasBaghel, Mandeep, Abhishek];
+  const mentor = [Aryam, Kshitiz, Mayank];
+  const council = [Harsh, Samson, Nazma, Satvik, Divyansh, Anant, Pranav, Preetimay, Prerna, Saanch, Soumya];
+  const design=[]
+  const programming=[]
+  const pr=[]
+  const operations=[]
+  const social=[]
+  const iot=[]
+  const web=[]
+  const cyber=[]
 
   return (
     <div>
@@ -116,7 +128,7 @@ export default function Team() {
             ))}
           </div>
         </div>
-        <div className="team-page-section">
+        {/* <div className="team-page-section">
           <h2>IEEE JUIT SB TEAM LEADS</h2>
           <h3 className="text-white text-[28px]">Design Team Leads</h3>
           <div className="team-page-cards">
@@ -244,10 +256,10 @@ export default function Team() {
               />
             ))}
           </div>
-        </div>
-        <Link to="/past-council-22" className="text-white mb-10">
+        </div> */}
+        {/* <Link to="/past-council-22" className="text-white mb-10">
           View Past Council
-        </Link>
+        </Link> */}
       </div>
       <Footer />
     </div>

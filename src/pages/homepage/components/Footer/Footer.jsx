@@ -2,6 +2,7 @@ import React from "react";
 import ieee from "./Assets/ieee.png";
 import wie from "./Assets/wie.png";
 import sight from "./Assets/sight.png";
+import sps from "./Assets/sps.png";
 import "./ambient.css";
 import "./wave_ani.css";
 import "./Footer.css";
@@ -83,7 +84,7 @@ const Footer = () => {
                 <ul className="mt-8 space-y-1 text-sm text-gray-700 dark:text-gray-200">
                   <li>
                     <strong>Call Us: </strong>
-                    <a href="callto:+917082787975">+91-7082787975</a>
+                    <a href="callto:+918221951947">+91-8221951947</a>
                   </li>
                   <li>
                     <strong>Address: </strong> Jaypee University Of Information
@@ -231,7 +232,7 @@ const Footer = () => {
 
                     <li>
                       <Link
-                        to="//wie.ieeejuit.co.in/"
+                        to="#"
                         target="_blank"
                         className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
                       >
@@ -241,11 +242,20 @@ const Footer = () => {
 
                     <li>
                       <Link
-                        to="//sight.ieeejuit.co.in/"
+                        to="#"
                         target="_blank"
                         className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
                       >
                         <img src={sight} className="w-[100px]" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="#"
+                        target="_blank"
+                        className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
+                      >
+                        <img src={sps} className="w-[100px]" />
                       </Link>
                     </li>
                   </ul>
@@ -323,6 +333,15 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li>
+                      <Link
+                        to="/gallery"
+                        className="text-white cursor-pointer"
+                        onClick={handleScrollToTop}
+                      >
+                        GALLERY
+                      </Link>
+                    </li>
+                    <li>
                       <ScrollLink
                         to="contact-us"
                         className="text-white cursor-pointer"
@@ -363,7 +382,7 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      to="//wie.ieeejuit.co.in/"
+                      to="/"
                       target="_blank"
                       className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
                     >
@@ -373,11 +392,20 @@ const Footer = () => {
 
                   <li>
                     <Link
-                      to="//sight.ieeejuit.co.in/"
+                      to="/"
                       target="_blank"
                       className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
                     >
                       IEEE SIGHT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      target="_blank"
+                      className="text-gray-500 transition hover:opacity-75 dark:text-gray-400"
+                    >
+                      IEEE SPS
                     </Link>
                   </li>
                 </ul>

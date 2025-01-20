@@ -127,6 +127,11 @@ function Navbar() {
               </Link>
             </li>
             <li>
+              <Link to="/gallery" onClick={handleScrollToTop}>
+                GALLERY
+              </Link>
+            </li>
+            <li>
               <ScrollLink
                 activeClass="active-nav"
                 to="contact-us"

@@ -1,18 +1,74 @@
 [
-    {
-      "image": "ShrutiJain",
-      "name": "Prof. Dr. Shruti Jain",
-      "position": "Faculty Coordinator",
-      "ln": "https://www.linkedin.com/in/dr-shruti-jain-92705b130",
-      "in": "https://www.instagram.com/jain.shruti15/",
-      "mail": "shruti.jain@juitsolan.in"
-    },
-    {
-        "image": "SunilKhah",
-        "name": "Prof. Dr. Sunil Khah",
-        "position": "Faculty Coordinator",
-        "ln": "https://www.linkedin.com/in/sunil-kumar-khah-a792a56/",
-        "in": "#",
-        "mail": "sunil_khah@rediffmail.com"
-    }
-  ]
+  {
+    "image": "ShrutiJain",
+    "name": "Prof. Dr. Shruti Jain",
+    "position": "Branch Counsellor",
+    "ln": "https://www.linkedin.com/in/dr-shruti-jain-92705b130",
+    "in": "https://www.instagram.com/jain.shruti15/",
+    "mail": "shruti.jain@juitsolan.in"
+  },
+  {
+      "image": "SunilKhah",
+      "name": "Prof. Dr. Sunil Khah",
+      "position": "Faculty Mentor",
+      "ln": "https://www.linkedin.com/in/sunil-kumar-khah-a792a56/",
+      "in": "#",
+      "mail": "sunil_khah@rediffmail.com"
+  },
+  {
+    "image": "HemantSood",
+    "name": "Prof. Dr. Hemant Sood",
+    "position": "SIGHT Counsellor",
+    "ln": "https://www.linkedin.com/in/dr-hemant-sood-5a412477/",
+    "in": "#",
+    "mail": "hemant.sood@juit.ac.in"
+  },
+  {
+    "image": "Nancy",
+    "name": "Dr. Nancy Singla",
+    "position": "SIGHT Faculty Member",
+    "ln": "https://www.linkedin.com/company/ieeejuit/",
+    "in": "#",
+    "mail": "nancy.singla@juit.ac.in"
+  },
+  {
+    "image": "Anita",
+    "name": "Dr. Anita",
+    "position": "WIE Faculty Counsellor",
+    "ln": "https://www.linkedin.com/in/dr-anita-sardana-ba0a09139/",
+    "in": "#",
+    "mail": "anita@juitsolan.in"
+  },
+  {
+    "image": "NeenaJindal",
+    "name": "Dr. Neena Jindal",
+    "position": "WIE Faculty Member",
+    "ln": "https://www.linkedin.com/in/neena-jindal-48ab612b4/?originalSubdomain=in",
+    "in": "#",
+    "mail": "neena.jindal@juit.ac.in"
+  },
+  {
+    "image": "vikasBaghel",
+    "name": "Dr. Vikas Baghel",
+    "position": "SPS Faculty Counsellor",
+    "ln": "https://www.linkedin.com/company/ieeejuit/",
+    "in": "#",
+    "mail": "vikas.baghel@juit.ac.in"
+  },
+  {
+    "image": "Mandeep",
+    "name": "Dr. Mandeep Singh",
+    "position": "Faculty Member",
+    "ln": "https://www.linkedin.com/in/mandeep-singh-b2952b111/?originalSubdomain=in",
+    "in": "#",
+    "mail": "mandeep.singh@juit.ac.in"
+  },
+  {
+    "image": "Abhishek",
+    "name": "Dr. Abhishek Chaudhary",
+    "position": "Faculty Member",
+    "ln": "https://www.linkedin.com/in/dr-abhishek-chaudhary-833b6814/",
+    "in": "#",
+    "mail": "abhishek.chaudhary@juit.ac.in"
+  }
+]

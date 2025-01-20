@@ -5,6 +5,7 @@ import NoPage from "./pages/noPage/NoPage";
 import Membership from "./pages/membership/Membership";
 import Team from "./pages/team/Team";
 import PastCouncil from "./pages/team/PastCouncil";
+import Gallery from "./pages/gallery/Gallery";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="*" element={<NoPage />} />
         <Route path="membership" element={<Membership />} />
         <Route path="team" element={<Team />} />
+        <Route path="gallery" element={<Gallery />} />
       </Routes>
     </BrowserRouter>
   );
