@@ -128,7 +128,10 @@ export default function Team() {
             ))}
           </div>
         </div>
-        { <div className="team-page-section">
+
+        {
+          <>
+         <div className="team-page-section">
           <h2>IEEE JUIT SB TEAM LEADS</h2>
           <h3 className="text-white text-[28px]">Design Team Leads</h3>
           <div className="team-page-cards">
@@ -145,7 +148,7 @@ export default function Team() {
             ))}
           </div>
         </div>
-       /* <div className="team-page-section">
+        <div className="team-page-section">
           <h3 className="text-white text-[28px]">Programming Team Leads</h3>
           <div className="team-page-cards">
             {Programming.map((member, index) => (
@@ -194,7 +197,7 @@ export default function Team() {
             </div>
             </div>
           <div className="team-page-section">
-            <h3 className="text-white text-[28px]">Web Team Leads</h3>
+          <h3 className="text-white text-[28px]">Web Team Leads</h3>
           <div className="team-page-cards">
             {Web.map((member, index) => (
               <TeamCard
@@ -209,6 +212,7 @@ export default function Team() {
             ))}
             </div>
             </div>
+            </>
             /*  <div className="team-page-section">
                 <h3 className="text-white text-[28px]">Operations Team Leads</h3>
                 <div className="team-page-cards">
