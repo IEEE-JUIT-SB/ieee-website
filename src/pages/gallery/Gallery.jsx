@@ -20,30 +20,26 @@ export default function Gallery() {
       <NoPage />
       <div className="banner">
         <div className="slider" style={{ "--quantity": 10 }}>
-          <div className="item" style={{ "--position": 1 }}><img src={image_1} alt="Gallery Image 1" /></div>
-          <div className="item" style={{ "--position": 2 }}><img src={image_2} alt="Gallery Image 2" /></div>
-          <div className="item" style={{ "--position": 3 }}><img src={image_3} alt="Gallery Image 3" /></div>
-          <div className="item" style={{ "--position": 4 }}><img src={image_4} alt="Gallery Image 4" /></div>
-          <div className="item" style={{ "--position": 5 }}><img src={image_5} alt="Gallery Image 5" /></div>
-          <div className="item" style={{ "--position": 6 }}><img src={image_6} alt="Gallery Image 6" /></div>
-          <div className="item" style={{ "--position": 7 }}><img src={image_7} alt="Gallery Image 7" /></div>
-          <div className="item" style={{ "--position": 8 }}><img src={image_8} alt="Gallery Image 8" /></div>
-          <div className="item" style={{ "--position": 9 }}><img src={image_9} alt="Gallery Image 9" /></div>
-          <div className="item" style={{ "--position": 10 }}><img src={image_10} alt="Gallery Image 10" /></div>
+          <div className="item" style={{ "--position": 1 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_1} alt="Gallery Image 1" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+
+          <div className="item" style={{ "--position": 2 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_2} alt="Gallery Image 2" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+
+          <div className="item" style={{ "--position": 3 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_3} alt="Gallery Image 3" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+
+          <div className="item" style={{ "--position": 4 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_4} alt="Gallery Image 4" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+
+          <div className="item" style={{ "--position": 5 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_5} alt="Gallery Image 5" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+
+          <div className="item" style={{ "--position": 6 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_6} alt="Gallery Image 6" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+
+          <div className="item" style={{ "--position": 7 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_7} alt="Gallery Image 7" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+
+          <div className="item" style={{ "--position": 8 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_8} alt="Gallery Image 8" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+
+          <div className="item" style={{ "--position": 9 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_9} alt="Gallery Image 9" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+
+          <div className="item" style={{ "--position": 10 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_10} alt="Gallery Image 10" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
         </div>
-        {/* <div class="content">
-          <h1 data-content="CSS ONLY">
-            CSS ONLY
-          </h1>
-          <div class="author">
-            <h2>LUN DEV</h2>
-            <p><b>Web Design</b></p>
-            <p>
-              Subscribe to the channel to watch many interesting videos
-            </p>
-          </div>
-          <div class="model"></div>
-        </div> */}
       </div>
     </div>
   );

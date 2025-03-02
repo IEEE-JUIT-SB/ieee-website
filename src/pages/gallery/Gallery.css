@@ -18,10 +18,10 @@ body{
 
 body::before{
     position: absolute;
-    width: min(1400px, 90vw);
+    width: min(1400px, 80vw);
     top: 10%;
     left: 50%;
-    height: 90%;
+    height: 70%;
     transform: translateX(-50%);
     content: '';
     /* background-image: url(images/bg.png); */
@@ -47,17 +47,22 @@ body::before{
     width: 170px;
     height: 220px;
     top: 15%;
-    left: calc(50% - 90px);
+    left: calc(50% - 85px);
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autoRun 20s linear infinite;
     z-index: 2;
+    
+}
+.banner .slider:hover{
+    animation-play-state: paused;
+
 }
 @keyframes autoRun{
     from{
-        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+        transform: perspective(1000px) rotateX(-13deg) rotateY(0deg);
     }to{
-        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+        transform: perspective(1000px) rotateX(-13deg) rotateY(360deg);
     }
 }
 
@@ -65,63 +70,41 @@ body::before{
     position: absolute;
     inset: 0 0 0 0;
     transform: 
-        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-        translateZ(550px);
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+    translateZ(550px);
 }
 .banner .slider .item img{
     width: 90%;
     height: 78%;
     object-fit: cover;
-}/*
-.banner .content{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1400px, 100vw);
-    height: max-content;
-    padding-bottom: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-}
-.banner .content h1{
-    font-family: 'ICA Rubrik';
-    font-size: 16em;
-    line-height: 1em;
-    color: #25283B;
-    position: relative;
-}
-.banner .content h1::after{
-    position: absolute;
-    inset: 0 0 0 0;
-    content: attr(data-content);
-    z-index: 2;
-    -webkit-text-stroke: 2px #d2d2d2;
-    color: transparent;
-}
-.banner .content .author{
-    font-family: Poppins;
-    text-align: right;
-    max-width: 200px;
-}
-.banner .content h2{
-    font-size: 3em;
-}
-.banner .content .model{
-    /* background-image: url(images/model.png); */
-    /* width: 100%;
-    height: 75vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-size: auto 130%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    z-index: 1; */
+    transition: transform 0.3s ease-in-out;
 
+}
+.banner .slider .item img:hover{
+    transform: scale(1.1);
+}
+h2{
+    text-align: center;
+    width: 160px;
+    position: absolute;
+    bottom: 10px;
+    left: 44%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1em;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+.item:hover h2 {
+    opacity: 1;
+    bottom: 70px;
+}
+.heading-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 1023px) {
     .banner .slider{
         width: 160px;
@@ -133,24 +116,8 @@ body::before{
             rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
             translateZ(300px);
     }
-    .banner .content h1{
-        text-align: center;
-        width: 100%;
-        text-shadow: 0 10px 20px #000;
-        font-size: 7em;
-    }
-    .banner .content .author{
-        color: #fff;
-        padding: 20px;
-        text-shadow: 0 10px 20px #000;
-        z-index: 2;
-        max-width: unset;
-        width: 100%;
-        text-align: center;
-        padding: 0 30px;
-    }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 430px) {
     .banner .slider{
         width: 100px;
         height: 150px;
@@ -160,8 +127,5 @@ body::before{
         transform: 
             rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
             translateZ(180px);
-    }
-    .banner .content h1{
-        font-size: 5em;
     }
 }

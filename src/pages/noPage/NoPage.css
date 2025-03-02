@@ -35,15 +35,15 @@
   top: 6%;
   left: 0;
 }
-.no-page-in-1 h1 {
+/* .no-page-in-1 h1 {
   font-size: 6rem;
   padding-bottom: 50vh;
-  margin-top: 10vh;
+  margin-top: 35vh;
 }
 .no-page-in-1 h2 {
   padding-top: 0;
   font-size: 34px;
-}
+} */
 #asset-1 {
   left: 20%;
   position: absolute;
@@ -88,11 +88,13 @@
   margin: 0 !important;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1023px) {
   .starfield-nopage{
-    top: -10rem;
+    top: -16%;
+    left: -349px;
+    z-index: 0;
   }
-  .no-page-in-1 h1{
+  /* .no-page-in-1 h1{
     font-size: 1.5rem;
     margin-top: 0;
     padding-bottom: 15rem;
@@ -102,5 +104,23 @@
     text-align: center;
     width: 50%;
     padding-top: 0;
+  } */
+}
+@media screen and (max-width: 425px) {
+  .starfield-nopage{
+    top: -16%;
+    left: 5px;
+    z-index: 0;
   }
+  /* .no-page-in-1 h1{
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-bottom: 15rem;
+  }
+  .no-page-in-1 h2{
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+    padding-top: 0;
+  } */
 }
