@@ -90,8 +90,8 @@
 
 @media screen and (max-width: 1023px) {
   .starfield-nopage{
-    top: -16%;
-    left: -349px;
+    top: -15%;
+    left: -340px;
     z-index: 0;
   }
   /* .no-page-in-1 h1{
