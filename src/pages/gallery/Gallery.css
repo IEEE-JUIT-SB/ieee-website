@@ -1,71 +1,16 @@
-.gallery-container {
-  background-color: #030014;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.gallery{
+  background-color: #030004;
 }
 
-h1 {
-  padding-top: 80px;
-  color: white;
-  font-weight: 800;
-  font-size: 48px;
-}
+@media (max-width: 928px) {
+  .card {
+    width: 295px;
+    height: 153px;
+    /* padding-top: 0px; */
 
-.cards-container {
-  padding-top: 70px;
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
+  }
+  .cardContainer{
+    margin-top: -400px;
+    margin-left: -30px;
+  }
 }
-
-.card {
-  background-color: #030014;
-  /* border-radius: 16px; */
-  width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(2, 0, 15, 0.1);
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.01);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-}
-
-.lowerContent {
-  /* border-radius: 16px; */
-  margin-top: 8px;
-  background-color: black;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.post-date {
-  background-color: #1e90ff;
-  padding: 5px 10px;
-  display: inline-block;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-  color: white;
-  margin-bottom: 10px;
-}
-.post-date, h3{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-.card-link {
-  text-decoration: none;
-  color: inherit;
-}
-

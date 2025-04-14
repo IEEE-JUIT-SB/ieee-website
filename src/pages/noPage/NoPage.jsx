@@ -12,7 +12,7 @@ export default function NoPage() {
       <Navbar />
       <Gallery/>
       <div className="">
-        {/* <img src={Asset2} alt="" id="bg-asset" className="nopage-bg" /> */}
+        <img src={Asset2} alt="" id="bg-asset" className="nopage-bg" />
         <div className="starfield-nopage">
           {/* <Starfield /> */}
         </div>
