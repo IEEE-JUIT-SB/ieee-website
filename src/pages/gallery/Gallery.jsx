@@ -1,47 +1,83 @@
-import NoPage from "../noPage/NoPage";
-import "./Gallery.css";
-import image_1 from "./assets/image_1.jpg";
-import image_2 from "./assets/image_2.jpeg";
-import image_3 from "./assets/image_3.png";
-import image_4 from "./assets/image_4.png";
-import image_5 from "./assets/image_5.png";
-import image_6 from "./assets/image_6.jpg";
-import image_7 from "./assets/image_7.jpeg";
-import image_8 from "./assets/image_8.png";
-import image_9 from "./assets/image_9.png";
-import image_10 from "./assets/image_10.png";
-
-
-
-
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './Gallery.css';
+import Navbar from "../homepage/components/navbar/Navbar";
+import Footer from "../homepage/components/Footer/Footer";
+import Starfield from "../homepage/components/landing/Starfield";
+import Asset2 from "../homepage/components/landing/Assets/asset2.png";
+import csession from './assets/cSession.jpeg';
+import podcast from './assets/podcast.png';
+import woi from './assets/wings of innovation.jpeg';
+import Enigma24 from './assets/Enigma24.jpeg';
+import tech from './assets/techtrak.jpg';
+const cardsData = [
+    {
+        image: Enigma24,
+        title: "ENIGMA 2024",
+        link: "https://drive.google.com/drive/folders/1nsiMQRACAg7wQFtjZjVhurNrYWKFtBK7",
+    },
+    {
+        image: woi,
+        title: "WINGS OF INNOVATION",
+        link: "https://drive.google.com/drive/folders/1Er1rP6CD5jsMe88q6u-3FKMZfn9oE-aV",
+    },
+    {
+        image: csession,
+        title: "C SESSION",
+        link: "https://drive.google.com/drive/folders/1KC-Y5plDDKkvInyPxT0JU-efDuGVxCBK",
+    },
+    {
+        image: tech,
+        title: "TECHTREK",
+        link: "https://drive.google.com/drive/folders/1S_Mra_Bu29iOysAuBXOaPOBUPfIlQeQL",
+    },
+    {
+        image: podcast,
+        title: "PODCAST",
+        link: "https://drive.google.com/drive/folders/1W197B9CeQ2ThTEHyG--8dYWFheb4dE6_",
+    },
+];
 export default function Gallery() {
-  return (
-    <div className="gallery-page">
-      <NoPage />
-      <div className="banner">
-        <div className="slider" style={{ "--quantity": 10 }}>
-          <div className="item" style={{ "--position": 1 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_1} alt="Gallery Image 1" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
-
-          <div className="item" style={{ "--position": 2 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_2} alt="Gallery Image 2" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
-
-          <div className="item" style={{ "--position": 3 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_3} alt="Gallery Image 3" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
-
-          <div className="item" style={{ "--position": 4 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_4} alt="Gallery Image 4" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
-
-          <div className="item" style={{ "--position": 5 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_5} alt="Gallery Image 5" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
-
-          <div className="item" style={{ "--position": 6 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_6} alt="Gallery Image 6" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
-
-          <div className="item" style={{ "--position": 7 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_7} alt="Gallery Image 7" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
-
-          <div className="item" style={{ "--position": 8 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_8} alt="Gallery Image 8" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
-
-          <div className="item" style={{ "--position": 9 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_9} alt="Gallery Image 9" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
-
-          <div className="item" style={{ "--position": 10 }}><a href="https://drive.google.com/drive/folders/1Fx8oJWcUE1vrbNMHsGI51obQSJQ3vhCy"><img src={image_10} alt="Gallery Image 10" /><div class="heading-div"><h2>Murder Mystry</h2></div></a></div>
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+        ]
+};
+    return (
+        <div className="gallery">
+            <Navbar />
+            <div className="w-full min-h-screen flex flex-col justify-center items-center relative">
+                <div className="cardContainer pt-3 pl-6 ">
+                <Slider {...settings} className="card">
+                    {cardsData.map((d)=> (
+                        <div className="bg-black-500 h-[480px] text-black rounded-xl px-2">
+                            <div className="h-[385px] rounded-t-xl rounded-b-xl flex justify-center items-center overflow-hidden">
+                                <img src={d.image} alt="" className="object-fit w-full h-full"/>
+                            </div>
+                            <div className="flex flex-col justify-center items-center gap-y-2 p-4">
+                                <p className="text-xl font-bold text-white">{d.title}</p>
+                                <a href={d.link}><button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">View Gallery</button></a>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+                </div>
+            </div>
+            <Footer />
         </div>
-      </div>
-    </div>
-  );
+    );
 }
-
