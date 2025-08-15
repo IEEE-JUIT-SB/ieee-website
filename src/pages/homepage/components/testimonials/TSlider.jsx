@@ -9,6 +9,7 @@ import AkinoriNishihara from "./Assets/AkinoriNishihara.png";
 import ShrutiJain from "./Assets/ShrutiJain.jpeg";
 import IshitaKapoor from "./Assets/IshitaKapoor.png";
 import HarshVardhan from "./Assets/Harsh.jpeg";
+import HarshitGoyal from "./Assets/harshit.JPG";
 import "./Testimonials.css";
 import TCard from "./TCard";
 
@@ -69,13 +70,13 @@ function TSlider() {
       linkedin: "https://www.linkedin.com/in/gunjaan/",
     },
     {
-      image: HarshVardhan,
-      name: "Harsh Vardhan",
-      role: "IEEE JUIT-SB Chairperson (2024-2025)",
+      image: HarshitGoyal,
+      name: "Harshit Goyal",
+      role: "IEEE JUIT-SB Chairperson (2025-2026)",
       testimonial:
         "Welcome to the IEEE JUIT Student Branch! As a Chairperson, I am honored to lead a dynamic community of innovators and learners. Our branch serves as a platform to inspire creativity, foster technical excellence, and nurture professional growth. We aim to empower students to excel in the fields of engineering and technology through engaging workshops, collaborative projects, and industry interactions. IEEE JUIT SB is more than a student branch, its a family of passionate individuals working together to make a meaningful impact. I invite you to be part of our journey as we explore, innovate, and shape our future together. Join us!.",
-      insta: "https://www.instagram.com/harsh_1302?igsh=eWRsdmFrdmFyM3J0&utm_source=qr",
-      linkedin: "https://www.linkedin.com/in/harsh-vardhan-49b189250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      insta: "https://www.instagram.com/harshitgoyal625/",
+      linkedin: "https://www.linkedin.com/in/harshitgoyal001/",
     },
   ];
 
