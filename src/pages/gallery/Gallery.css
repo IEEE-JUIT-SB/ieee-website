@@ -2,7 +2,7 @@
   background-color: #030004;
 }
 
-@media (max-width: 928px) {
+@media (max-width: 950px) {
   .card {
     width: 295px;
     height: 153px;

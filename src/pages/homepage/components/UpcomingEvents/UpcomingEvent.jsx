@@ -126,7 +126,7 @@ export default function UpcomingEvents() {
               Event Timings: <text>03:00PM - 07:30PM</text>
             </p>
           </div>
-          <Link to="/past-events">Past Events ➡</Link>
+          <Link to="/gallery">Past Events ➡</Link>
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ export default function NoPage() {
         <div className="no-page-in-1">
           {/* <h1>IEEE</h1> */}
         </div>
-        <Footer />
+      <Footer />
       </div>
     </div>
   );
