@@ -29,7 +29,7 @@ function TSlider() {
       name: "Prof. Dr. Shruti Jain",
       role: "BRANCH COUNSELLOR, IEEE JUIT-SB",
       testimonial:
-        "Great greetings to all our IEEE JIJIT Student Branch Members, it is my colossal satisfaction to have this gathering of new people , with your predictable assistance and attempts, our society has set incredible accomplishments already, and I wish to achieve new landmarks with this gifted group.",
+        "Great greetings to all our IEEE JUIT Student Branch Members, it is my colossal satisfaction to have this gathering of new people , with your predictable assistance and attempts, our society has set incredible accomplishments already, and I wish to achieve new landmarks with this gifted group.",
       insta: "https://www.instagram.com/jain.shruti15/",
       linkedin: "https://www.linkedin.com/in/dr-shruti-jain-92705b130/",
     },
