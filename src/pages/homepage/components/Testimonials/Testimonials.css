@@ -28,6 +28,7 @@
 }
 
 .test-content {
+  height: 60vh;
   display: flex;
   width: 80%;
   align-items: center;
@@ -137,6 +138,9 @@
 }
 
 @media (max-width: 980px) {
+  .test-content {
+    height: 850px;
+  }
   .slick-slider{
     padding: 0 !important;
   }

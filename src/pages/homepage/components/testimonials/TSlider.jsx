@@ -70,13 +70,13 @@ function TSlider() {
       linkedin: "https://www.linkedin.com/in/gunjaan/",
     },
     {
-      image: HarshitGoyal,
-      name: "Harshit Goyal",
-      role: "IEEE JUIT-SB Chairperson (2025-2026)",
+      image: HarshVardhan,
+      name: "Harsh Vardhan",
+      role: "IEEE JUIT-SB Chairperson (2024-2025)",
       testimonial:
         "Welcome to the IEEE JUIT Student Branch! As a Chairperson, I am honored to lead a dynamic community of innovators and learners. Our branch serves as a platform to inspire creativity, foster technical excellence, and nurture professional growth. We aim to empower students to excel in the fields of engineering and technology through engaging workshops, collaborative projects, and industry interactions. IEEE JUIT SB is more than a student branch, its a family of passionate individuals working together to make a meaningful impact. I invite you to be part of our journey as we explore, innovate, and shape our future together. Join us!.",
-      insta: "https://www.instagram.com/harshitgoyal625/",
-      linkedin: "https://www.linkedin.com/in/harshitgoyal001/",
+      insta: "https://www.instagram.com/harsh_1302/",
+      linkedin: "https://www.linkedin.com/in/harshvardhanedu13/",
     },
   ];
 
